@@ -8,8 +8,6 @@ public class AstroidBase : MonoBehaviour
     public float movementSpeed = 10.0f;
     public Vector2 targetLocation;
 
-    private bool m_HasReachedTarget = false;
-
     public void Init(Vector2 targetLocation)
     {
         this.targetLocation = targetLocation;
@@ -17,9 +15,6 @@ public class AstroidBase : MonoBehaviour
 
     private void Update()
     {
-        if (!m_HasReachedTarget)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, targetLocation, movementSpeed * Time.deltaTime);
-        }
+        transform.position = Vector2.MoveTowards(transform.position, targetLocation, movementSpeed*Time.deltaTime);
     }
 }

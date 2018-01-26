@@ -30,9 +30,14 @@ public class InputHandler : MonoBehaviour
         pointerEventData.position = screenLocation;
 
         Vector3 spawnPosition = new Vector3(Random.Range(spawnTransformMin.position.x, spawnTransformMax.position.x), spawnTransformMin.position.y);
-        
+
+        Vector2 destination = Camera.main.ScreenToWorldPoint(pointerEventData.position - new Vector2(spawnPosition.x, spawnPosition.y));
+        //destination.Normalize();
+
+        Vector2 finalDestination = destination * 2;
+
         GameObject newAstroid = Instantiate(astroidObject, spawnPosition, Quaternion.identity);
         AstroidBase astroidScript = newAstroid.GetComponent<AstroidBase>();
-        astroidScript.Init(Camera.main.ScreenToWorldPoint(pointerEventData.position));
+        astroidScript.Init(finalDestination);
     }
 }
