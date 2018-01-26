@@ -16,6 +16,11 @@ public class DinoBase : MonoBehaviour
 
     private void Start()
     {
+        Init();
+    }
+
+    public void Init()
+    {
         if (Random.value < 0.5f)
             m_IsMovingRight = !m_IsMovingRight;
 
@@ -31,11 +36,6 @@ public class DinoBase : MonoBehaviour
             newScale.x *= 1;
             transform.localScale = newScale;
         }
-    }
-
-    public void Init()
-    {
-        
     }
 
     private void Update()
