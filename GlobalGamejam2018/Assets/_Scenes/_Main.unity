@@ -257,8 +257,8 @@ Camera:
   m_GameObject: {fileID: 336208849}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 3
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.2647059, g: 0.5506536, b: 1, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -394,25 +394,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 61467181637154366, guid: d5549bf5fcd88534a82fad17ac8b684a,
+    - target: {fileID: 114662136018577154, guid: d5549bf5fcd88534a82fad17ac8b684a,
         type: 2}
-      propertyPath: m_Offset.x
-      value: -6.2809205
+      propertyPath: speed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 50819789458254948, guid: d5549bf5fcd88534a82fad17ac8b684a,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61467181637154366, guid: d5549bf5fcd88534a82fad17ac8b684a,
         type: 2}
-      propertyPath: m_Size.x
-      value: 13.561841
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 61467181637154366, guid: d5549bf5fcd88534a82fad17ac8b684a,
         type: 2}
-      propertyPath: m_Offset.y
-      value: -0.7303238
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 61467181637154366, guid: d5549bf5fcd88534a82fad17ac8b684a,
+    - target: {fileID: 50819789458254948, guid: d5549bf5fcd88534a82fad17ac8b684a,
         type: 2}
-      propertyPath: m_Size.y
-      value: 16.48323
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5549bf5fcd88534a82fad17ac8b684a, type: 2}
@@ -548,7 +553,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2118887385}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9ab2bd92e2c47e04bbe834713aac614a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
