@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: 85702658ec223e34e8764151eb14b761
-timeCreated: 1516999782
+timeCreated: 1517000562
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: SPRITE_Dino_Spino_01_0
     21300002: SPRITE_Dino_Spino_01_1
+    21300004: SPRITE_Dino_Spino_01_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -86,7 +87,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 12
         width: 96
         height: 35
       alignment: 0
@@ -100,9 +101,23 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 97
-        y: 0
+        y: 12
         width: 96
         height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Spino_01_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
