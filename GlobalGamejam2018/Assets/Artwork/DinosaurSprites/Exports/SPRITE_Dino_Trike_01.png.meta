@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 93f319a6a211cd848b08f6c965d514a2
-timeCreated: 1517051486
+timeCreated: 1517051797
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -15,14 +15,15 @@ TextureImporter:
     21300016: SPRITE_Dino_Trike_Part_07
     21300018: SPRITE_Dino_Trike_Part_02
     21300020: SPRITE_Dino_Trike_01_3
-    21300022: SPRITE_Dino_Trike_01_4
-    21300024: SPRITE_Dino_Trike_01_5
-    21300026: SPRITE_Dino_Trike_01_6
-    21300028: SPRITE_Dino_Trike_01_7
-    21300030: SPRITE_Dino_Trike_01_8
+    21300022: SPRITE_Dino_Trike_Part_01
+    21300024: SPRITE_Dino_Trike_Part_03
+    21300026: SPRITE_Dino_Trike_Part_04
+    21300028: SPRITE_Dino_Trike_Part_05
+    21300030: SPRITE_Dino_Trike_Part_06
     21300032: SPRITE_Dino_Trike_01_9
     21300034: SPRITE_Dino_Trike_01_10
-    21300036: SPRITE_Dino_Trike_01_11
+    21300036: SPRITE_Dino_Trike_Part_02
+    21300038: SPRITE_Dino_Trike_Head_01
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -107,7 +108,7 @@ TextureImporter:
         width: 72
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,7 +122,7 @@ TextureImporter:
         width: 71
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -135,7 +136,7 @@ TextureImporter:
         width: 71
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,13 +150,13 @@ TextureImporter:
         width: 70
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Trike_01_4
+      name: SPRITE_Dino_Trike_Part_01
       rect:
         serializedVersion: 2
         x: 0
@@ -163,13 +164,13 @@ TextureImporter:
         width: 27
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Trike_01_5
+      name: SPRITE_Dino_Trike_Part_03
       rect:
         serializedVersion: 2
         x: 30
@@ -177,13 +178,13 @@ TextureImporter:
         width: 12
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Trike_01_6
+      name: SPRITE_Dino_Trike_Part_04
       rect:
         serializedVersion: 2
         x: 45
@@ -191,13 +192,13 @@ TextureImporter:
         width: 22
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Trike_01_7
+      name: SPRITE_Dino_Trike_Part_05
       rect:
         serializedVersion: 2
         x: 71
@@ -205,13 +206,13 @@ TextureImporter:
         width: 19
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Trike_01_8
+      name: SPRITE_Dino_Trike_Part_06
       rect:
         serializedVersion: 2
         x: 97
@@ -219,13 +220,13 @@ TextureImporter:
         width: 12
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Trike_01_9
+      name: SPRITE_Dino_Trike_Part_07
       rect:
         serializedVersion: 2
         x: 113
@@ -233,13 +234,13 @@ TextureImporter:
         width: 42
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Trike_01_10
+      name: SPRITE_Dino_Trike_Head_01
       rect:
         serializedVersion: 2
         x: 163
@@ -247,13 +248,13 @@ TextureImporter:
         width: 29
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Trike_01_11
+      name: SPRITE_Dino_Trike_Part_02
       rect:
         serializedVersion: 2
         x: 0
@@ -261,7 +262,7 @@ TextureImporter:
         width: 14
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
