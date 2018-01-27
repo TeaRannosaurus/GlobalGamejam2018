@@ -241,6 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b201907085405943a63e736481c0200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speciesName: Trike
   health: 3
   speed: 50
   changedirectionChance: 0.5

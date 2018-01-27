@@ -6,8 +6,9 @@ using UnityEngine;
 public class DinoBase : MonoBehaviour, IDamageable
 {
     [Header("Base dino properties")]
-    public int health       = 1;
-    public float speed      = 10.0f;
+    public string speciesName   = "Unnamed species";
+    public int health           = 1;
+    public float speed          = 10.0f;
 
     public float changedirectionChance = 0.5f;
     public Vector2 travelTime = new Vector2(0.5f, 3.0f);
