@@ -40,7 +40,7 @@ public class AstroidBase : MonoBehaviour
         {
             if (!m_HasShaken)
             {
-                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>().ShakeCamera(shakeDuration, shakeAmount);
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShaker>().ShakeCamera(shakeDuration, shakeAmount);
                 m_HasShaken = true;
                 Destroy(gameObject, 2.0f);
             }
