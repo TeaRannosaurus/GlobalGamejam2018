@@ -14,6 +14,8 @@ public class DinoBase : MonoBehaviour
     private bool m_IsMovingRight = true;
     private float m_TravelTimeCounter = 0.0f;
 
+    private Animator m_Animator = null;
+
     private void Start()
     {
         Init();
@@ -21,6 +23,11 @@ public class DinoBase : MonoBehaviour
 
     public void Init()
     {
+        m_Animator = GetComponent<Animator>();
+
+        if(m_Animator == null)
+            Debug.LogError("No animator found on this object", this);
+
         if (Random.value < 0.5f)
             m_IsMovingRight = !m_IsMovingRight;
 

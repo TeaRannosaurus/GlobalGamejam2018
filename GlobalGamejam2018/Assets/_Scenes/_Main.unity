@@ -394,6 +394,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4101455396187022, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987838438321212, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114015737589105826, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: spawnTransformMax
+      value: 
+      objectReference: {fileID: 1341894101}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
   m_IsPrefabParent: 0
@@ -459,6 +472,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1341894101 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4987838438321212, guid: c2aebb28ce416954a9cb194e4504ee64,
+    type: 2}
+  m_PrefabInternal: {fileID: 809972334}
 --- !u!1001 &1349861454
 Prefab:
   m_ObjectHideFlags: 0
