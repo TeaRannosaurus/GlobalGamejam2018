@@ -11,11 +11,18 @@ public class AstroidBase : MonoBehaviour
     public float shakeDuration = 1.0f;
     public Vector2 targetLocation;
 
+    [Header("AudioSounds")]
+    [SerializeField] private AudioClip[] m_TraveClips     = null;
+    [SerializeField] private AudioClip[] m_ImpactClips    = null;
+    private SoundEffectManager m_SoundEffectManager       = null;
+
     private bool m_HasShaken = false;
 
     public void Init(Vector2 targetLocation)
     {
         this.targetLocation = targetLocation;
+        m_SoundEffectManager = GetComponent<SoundEffectManager>();
+        AttemptPlaySound(m_TraveClips);
     }
 
     private void Update()
@@ -42,8 +49,20 @@ public class AstroidBase : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShaker>().ShakeCamera(shakeDuration, shakeAmount);
                 m_HasShaken = true;
+                AttemptPlaySound(m_ImpactClips);
                 Destroy(gameObject, 2.0f);
             }
         }
+    }
+
+    public void AttemptPlaySound(AudioClip[] audioClips)
+    {
+        if (audioClips.Length == 0 || audioClips == null)
+        {
+            Debug.Log("Attempted sound array is empty");
+            return;
+        }
+
+        m_SoundEffectManager.PlaySound(audioClips);
     }
 }
