@@ -482,7 +482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speciesName: Brachio
   health: 3
-  speed: 50
+  speed: 20
   panicSpeed: 20
   changedirectionChance: 0.5
   travelTime: {x: 0.5, y: 3}
