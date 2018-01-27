@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 81336727173763250}
   - component: {fileID: 114459891189747074}
   - component: {fileID: 114073172881811154}
+  - component: {fileID: 114771548685249948}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -285,7 +286,7 @@ MonoBehaviour:
       type: 2}
     speciesMinMax: {x: 1, y: 3}
     spawnBurst: {x: 1, y: 3}
-    childChange: 0.2
+    childChange: 0.3
     amountAlive: 0
   - speciesName: Brachio
     speciesPrefab: {fileID: 1519703182759890, guid: 5e33fda925a968843846dfc1f2776c9e,
@@ -322,6 +323,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8119be1e6081b764d8d1fe9f5cc4d670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114771548685249948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341032262637896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9bcbe648fa0614f8d464188cc9bb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0
+  shakeAmount: 0.7
+  decreaseFactor: 1
 --- !u!114 &114901881374163354
 MonoBehaviour:
   m_ObjectHideFlags: 1

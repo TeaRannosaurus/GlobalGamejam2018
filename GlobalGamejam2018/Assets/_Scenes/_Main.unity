@@ -480,6 +480,11 @@ Prefab:
       propertyPath: backGrounds.Array.data[1].background
       value: 
       objectReference: {fileID: 983184685}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[0].childChange
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
   m_IsPrefabParent: 0
