@@ -19,6 +19,11 @@ public class SoundEffectManager : MonoBehaviour
         m_maxPitch += pitchDifference;
     }
 
+    public void StopAllAudio()
+    {
+        audioSource.Stop();
+    }
+
     /// <summary>
     /// Plays the passed sound at an random pitch
     /// </summary>

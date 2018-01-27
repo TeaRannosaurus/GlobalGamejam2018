@@ -72,9 +72,7 @@ GameObject:
   - component: {fileID: 124734871892024774}
   - component: {fileID: 81336727173763250}
   - component: {fileID: 114459891189747074}
-  - component: {fileID: 114073172881811154}
   - component: {fileID: 114771548685249948}
-  - component: {fileID: 114017801937287094}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -149,7 +147,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1259029972012184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 902.6, y: -132.7, z: 10}
+  m_LocalPosition: {x: 717.4, y: -175, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4820684617224410}
@@ -175,7 +173,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1022267416395384}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -798.9, y: -132.7, z: 10}
+  m_LocalPosition: {x: -694.3, y: -175, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4820684617224410}
@@ -201,7 +199,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1300020768152584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 156, z: -10}
+  m_LocalPosition: {x: 0, y: 187, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4820684617224410}
@@ -234,7 +232,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1516234139296112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 597.4, y: -132.7, z: 10}
+  m_LocalPosition: {x: 597.4, y: -175, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4820684617224410}
@@ -247,7 +245,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1814991971245884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -592.2, y: -132.7, z: 10}
+  m_LocalPosition: {x: -592.2, y: -175, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4820684617224410}
@@ -312,34 +310,6 @@ MonoBehaviour:
   spawnTransformMin: {fileID: 4072463134925268}
   spawnTransformMax: {fileID: 4072463134925268}
   eventSystem: {fileID: 0}
---- !u!114 &114017801937287094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1341032262637896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f9bcbe648fa0614f8d464188cc9bb2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shakeDuration: 0
-  shakeAmount: 0.7
-  decreaseFactor: 1
---- !u!114 &114073172881811154
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1341032262637896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f9bcbe648fa0614f8d464188cc9bb2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shakeDuration: 0
-  shakeAmount: 0.7
-  decreaseFactor: 1
 --- !u!114 &114426919777100350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -360,7 +330,7 @@ MonoBehaviour:
     speciesPrefab: {fileID: 1402451124984074, guid: 074adb658786c64498d89f1fe0785a58,
       type: 2}
     speciesMinMax: {x: 1, y: 50}
-    spawnBurst: {x: 1, y: 10}
+    spawnBurst: {x: 5, y: 10}
     childChange: 0.3
     amountAlive: 0
   - speciesName: Brachio
@@ -383,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backGrounds:
   - background: {fileID: 0}
-    parallaxScale: 10
+    parallaxScale: 0
   smoothing: 1
 --- !u!114 &114670158962637804
 MonoBehaviour:
@@ -397,7 +367,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTime: 60
-  hasStarted: 0
   m_TimerText: {fileID: 0}
 --- !u!114 &114771548685249948
 MonoBehaviour:
@@ -426,6 +395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollBoundary: 100
   scrollSpeed: 500
+  nativeResolustion: {x: 800, y: 600}
 --- !u!124 &124734871892024774
 Behaviour:
   m_ObjectHideFlags: 1

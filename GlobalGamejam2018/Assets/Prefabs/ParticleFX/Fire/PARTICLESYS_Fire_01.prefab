@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198091780243500874}
   - component: {fileID: 199759694135501542}
   m_Layer: 0
-  m_Name: PARTICLESYS_MeteorSmoke_01
+  m_Name: PARTICLESYS_Fire_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
