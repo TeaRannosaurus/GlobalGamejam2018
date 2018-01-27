@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198475698219128114}
   - component: {fileID: 199460437042617356}
   m_Layer: 8
-  m_Name: PARTICLESYS_Dino_Raptor_Leg_01
+  m_Name: PARTICLESYS_Dino_Raptor_Leg_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

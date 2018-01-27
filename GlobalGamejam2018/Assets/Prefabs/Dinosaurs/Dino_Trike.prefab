@@ -333,9 +333,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2c0e2704efd005547aa91fb479175807, type: 3}
   - {fileID: 8300000, guid: 89c7875bbe280984b97326c411b4c8f1, type: 3}
   m_DeathClips:
-  - {fileID: 8300000, guid: da40550f53d671a4f9c7d902502f5509, type: 3}
-  - {fileID: 8300000, guid: 157a182cf551c8a4780f648d52f68c3f, type: 3}
-  - {fileID: 8300000, guid: 048d5c2c6d836764b8bf2847f924675d, type: 3}
+  - {fileID: 8300000, guid: 9611fbbf0a7f1a4489834bf65d63d2dd, type: 3}
 --- !u!212 &212146007913336204
 SpriteRenderer:
   m_ObjectHideFlags: 1
