@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4034926206826448}
   - component: {fileID: 198962462995717676}
   - component: {fileID: 199533941214709566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PARTICLESYS_Dino_Trike_Horn_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ ParticleSystem:
   serializedVersion: 5
   lengthInSec: 2
   simulationSpeed: 1
-  stopAction: 0
+  stopAction: 2
   looping: 0
   prewarm: 0
   playOnAwake: 0
@@ -544,7 +544,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 5
     enabled: 1
-    type: 12
+    type: 10
     angle: 50
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -611,7 +611,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
     arc:
-      value: 360
+      value: 180
       mode: 0
       spread: 0
       speed:
