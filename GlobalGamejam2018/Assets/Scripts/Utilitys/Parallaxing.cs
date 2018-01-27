@@ -28,7 +28,7 @@ public class Parallaxing : MonoBehaviour
 
         for (int i = 0; i < backGrounds.Length; i++)
         {
-            //backGrounds[i].parallaxScale = backGrounds[i].background.position.z;
+            backGrounds[i].background.transform.parent = gameObject.transform;
         }
     }
 
