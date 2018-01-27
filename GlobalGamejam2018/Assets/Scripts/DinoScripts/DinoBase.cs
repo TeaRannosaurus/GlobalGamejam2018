@@ -11,6 +11,20 @@ public class DinoBase : MonoBehaviour
     public float changedirectionChance = 0.5f;
     public Vector2 travelTime = new Vector2(0.5f, 3.0f);
 
+    [Header("Base dino effects")]
+    [SerializeField] private GameObject m_ParticleEffect = null;
+    [SerializeField] private Sprite[] m_FixedBodyParts = null;
+    [SerializeField] private Sprite[] m_RandomBodyParts = null;
+
+    [Header("Sound effects")]
+    [SerializeField] private AudioClip[] m_IdleClips = null;
+    [SerializeField] [Range(0.0f, 1.0f)] private float m_IdleGruntChange;
+    [SerializeField] private AudioClip[] m_MovementClips = null;
+    [SerializeField] private AudioClip[] m_Hurtclips = null;
+    [SerializeField] private AudioClip[] m_DeathClips = null;
+    private SoundEffectManager m_SoundEffectManager = null;
+
+
     private bool m_IsMovingRight = true;
     private float m_TravelTimeCounter = 0.0f;
 
@@ -24,9 +38,14 @@ public class DinoBase : MonoBehaviour
     public void Init()
     {
         m_Animator = GetComponent<Animator>();
+        m_SoundEffectManager = GetComponent<SoundEffectManager>();
 
         if(m_Animator == null)
             Debug.LogError("No animator found on this object", this);
+
+        if (m_SoundEffectManager == null)
+            Debug.LogError("No sound effect manager found on this object", this);
+
 
         if (Random.value < 0.5f)
             m_IsMovingRight = !m_IsMovingRight;
@@ -43,6 +62,11 @@ public class DinoBase : MonoBehaviour
             newScale.x *= 1;
             transform.localScale = newScale;
         }
+    }
+
+    public void PlayStepSound()
+    {
+        AttemptPlaySound(m_MovementClips);
     }
 
     private void Update()
@@ -85,5 +109,15 @@ public class DinoBase : MonoBehaviour
         return Random.Range(travelTime.x, travelTime.y);
     }
 
+    protected void AttemptPlaySound(AudioClip[] potentialClips)
+    {
+        if (potentialClips == null || potentialClips.Length == 0)
+        {
+            Debug.LogError("An sound that was attempted to play was empty", this);
+            return;
+        }
+
+        m_SoundEffectManager.PlaySound(potentialClips);
+    }
 
 }
