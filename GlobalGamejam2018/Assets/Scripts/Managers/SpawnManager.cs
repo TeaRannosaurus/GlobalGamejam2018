@@ -5,8 +5,10 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [Header("SpawnManager properties")]
-    public Transform minSpawnTransfrom = null;
-    public Transform maxSpawnTransfrom = null;
+    public Transform minSpawnTransfromLeft = null;
+    public Transform maxSpawnTransfromLeft = null;
+    public Transform minSpawnTransfromRight = null;
+    public Transform maxSpawnTransfromRight = null;
 
     public SpeciesSet[] allSpecies     = null;
 
@@ -49,7 +51,17 @@ public class SpawnManager : MonoBehaviour
 
             bool shouldBeChild = Random.value < species.childChange;
 
-            Vector3 spawnPosition = new Vector3(Random.Range(minSpawnTransfrom.position.x, maxSpawnTransfrom.position.x), minSpawnTransfrom.position.y);
+            Vector3 spawnPosition = Vector3.zero;
+
+            if (Random.value < 0.5f)
+            {
+                spawnPosition = new Vector3(Random.Range(minSpawnTransfromLeft.position.x, maxSpawnTransfromRight.position.x), minSpawnTransfromRight.position.y);
+            }
+            else
+            {
+                spawnPosition = new Vector3(Random.Range(minSpawnTransfromLeft.position.x, maxSpawnTransfromLeft.position.x), minSpawnTransfromLeft.position.y);
+            }
+
             GameObject dinoObject = Instantiate(species.speciesPrefab, spawnPosition, Quaternion.identity);
             DinoBase dinoBase = dinoObject.GetComponent<DinoBase>();
             dinoBase.Init(shouldBeChild);    

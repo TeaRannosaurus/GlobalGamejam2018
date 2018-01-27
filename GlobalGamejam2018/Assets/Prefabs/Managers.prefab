@@ -11,6 +11,36 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1300020768152584}
   m_IsPrefabParent: 1
+--- !u!1 &1022267416395384
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4088763054494614}
+  m_Layer: 0
+  m_Name: MinDinoLeftLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1259029972012184
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4044853132326378}
+  m_Layer: 0
+  m_Name: MaxDinoRightLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1300020768152584
 GameObject:
   m_ObjectHideFlags: 0
@@ -44,6 +74,7 @@ GameObject:
   - component: {fileID: 114459891189747074}
   - component: {fileID: 114073172881811154}
   - component: {fileID: 114771548685249948}
+  - component: {fileID: 114017801937287094}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -90,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4848621645465950}
   m_Layer: 0
-  m_Name: MaxDinoLocation
+  m_Name: MinDinoRightLocation
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -105,12 +136,25 @@ GameObject:
   m_Component:
   - component: {fileID: 4908518563135694}
   m_Layer: 0
-  m_Name: MinDinoLocation
+  m_Name: MaxDinoLeftLocation
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4044853132326378
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1259029972012184}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 902.6, y: -132.7, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4820684617224410}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4072463134925268
 Transform:
   m_ObjectHideFlags: 1
@@ -122,7 +166,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4820684617224410}
-  m_RootOrder: 3
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4088763054494614
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022267416395384}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -798.9, y: -132.7, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4820684617224410}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4101455396187022
 Transform:
@@ -135,7 +192,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4820684617224410}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4463984774717728
 Transform:
@@ -161,8 +218,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4088763054494614}
   - {fileID: 4908518563135694}
   - {fileID: 4848621645465950}
+  - {fileID: 4044853132326378}
   - {fileID: 4101455396187022}
   - {fileID: 4072463134925268}
   m_Father: {fileID: 4463984774717728}
@@ -175,11 +234,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1516234139296112}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 623, y: -162, z: 10}
+  m_LocalPosition: {x: 597.4, y: -132.7, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4820684617224410}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4908518563135694
 Transform:
@@ -188,11 +247,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1814991971245884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -685, y: -169, z: 10}
+  m_LocalPosition: {x: -592.2, y: -132.7, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4820684617224410}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &20701182862288164
 Camera:
@@ -253,6 +312,20 @@ MonoBehaviour:
   spawnTransformMin: {fileID: 4072463134925268}
   spawnTransformMax: {fileID: 4072463134925268}
   eventSystem: {fileID: 0}
+--- !u!114 &114017801937287094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341032262637896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f9bcbe648fa0614f8d464188cc9bb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0
+  shakeAmount: 0.7
+  decreaseFactor: 1
 --- !u!114 &114073172881811154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,21 +351,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525725e5f580ec043a7084e2e11a4904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnTransfrom: {fileID: 4908518563135694}
-  maxSpawnTransfrom: {fileID: 4848621645465950}
+  minSpawnTransfromLeft: {fileID: 4088763054494614}
+  maxSpawnTransfromLeft: {fileID: 4908518563135694}
+  minSpawnTransfromRight: {fileID: 4848621645465950}
+  maxSpawnTransfromRight: {fileID: 4044853132326378}
   allSpecies:
   - speciesName: Trike
     speciesPrefab: {fileID: 1402451124984074, guid: 074adb658786c64498d89f1fe0785a58,
       type: 2}
-    speciesMinMax: {x: 1, y: 3}
-    spawnBurst: {x: 1, y: 3}
+    speciesMinMax: {x: 1, y: 50}
+    spawnBurst: {x: 1, y: 10}
     childChange: 0.3
     amountAlive: 0
   - speciesName: Brachio
     speciesPrefab: {fileID: 1519703182759890, guid: 5e33fda925a968843846dfc1f2776c9e,
       type: 2}
-    speciesMinMax: {x: 1, y: 1}
-    spawnBurst: {x: 1, y: 1}
+    speciesMinMax: {x: 1, y: 3}
+    spawnBurst: {x: 1, y: 2}
     childChange: 0.2
     amountAlive: 0
 --- !u!114 &114459891189747074
@@ -308,8 +383,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backGrounds:
   - background: {fileID: 0}
-    parallaxScale: 50
-  - background: {fileID: 0}
     parallaxScale: 10
   smoothing: 1
 --- !u!114 &114670158962637804
@@ -323,6 +396,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8119be1e6081b764d8d1fe9f5cc4d670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameTime: 60
+  hasStarted: 0
+  m_TimerText: {fileID: 0}
 --- !u!114 &114771548685249948
 MonoBehaviour:
   m_ObjectHideFlags: 1
