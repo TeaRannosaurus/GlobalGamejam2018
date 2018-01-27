@@ -217,6 +217,10 @@ MonoBehaviour:
   shakeAmount: 5
   shakeDuration: 0.3
   targetLocation: {x: 0, y: 0}
+  m_TraveClips:
+  - {fileID: 8300000, guid: 2b1e405565b6eb84a91bdbde1cbb77f8, type: 3}
+  m_ImpactClips:
+  - {fileID: 8300000, guid: 7c5e01c51ad8abf44938f216a8ec6946, type: 3}
 --- !u!212 &212908980461126004
 SpriteRenderer:
   m_ObjectHideFlags: 1
