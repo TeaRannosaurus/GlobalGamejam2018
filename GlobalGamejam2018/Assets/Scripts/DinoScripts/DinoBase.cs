@@ -13,12 +13,20 @@ public class DinoBase : MonoBehaviour, IDamageable
     public float changedirectionChance = 0.5f;
     public Vector2 travelTime = new Vector2(0.5f, 3.0f);
 
+    [HideInInspector] public bool isChild = false;
+
     private bool m_IsAlive = true;
     private bool m_IsMovingRight = true;
     private float m_TravelTimeCounter = 0.0f;
 
 
-    [Header("Base dino effects")]
+    [Header("Dino size")]
+    public Transform body = null;
+    public Transform head = null;
+    public Transform headpivot = null;
+    public Vector3 childSize = Vector3.one;
+
+    [Header("Base dino particle effects")]
     [SerializeField] private GameObject m_BloodParticleSystem   = null;
     [SerializeField] private GameObject[] m_FixedBodyPartSystems= null;
     //[SerializeField] private Sprite[] m_FixedBodyParts          = null;
@@ -34,18 +42,23 @@ public class DinoBase : MonoBehaviour, IDamageable
 
     private SpriteRenderer m_SpriteRenderer                     = null;
     private Animator m_Animator                                 = null;
+    private BoxCollider2D m_Collider                            = null;
 
+    private float m_UniqueRandomValue                           = 0.1f;
 
     private void Start()
     {
         Init();
     }
 
-    public void Init()
+    public void Init(bool becomeChild = false)
     {
+        m_UniqueRandomValue = Random.Range(-0.1f, 0.1f);
+
         m_Animator = GetComponent<Animator>();
         m_SoundEffectManager = GetComponent<SoundEffectManager>();
         m_SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        m_Collider = GetComponent<BoxCollider2D>();
 
         if(m_Animator == null)
             Debug.LogError("No animator found on this object", this);
@@ -54,19 +67,31 @@ public class DinoBase : MonoBehaviour, IDamageable
             Debug.LogError("No sound effect manager found on this object", this);
 
 
+        if (becomeChild)
+        {
+            BecomeChild();
+        }
+
         if (Random.value < 0.5f)
             m_IsMovingRight = !m_IsMovingRight;
 
         Vector2 newScale = transform.localScale;
+        newScale.x += m_UniqueRandomValue;
+        newScale.y += m_UniqueRandomValue;
+
+        float uniqueAnimationSpeed = m_Animator.GetFloat("Speed") * Random.Range(1.0f, 1.1f);
+
+        m_Animator.SetFloat("Speed", uniqueAnimationSpeed);
 
         if (m_IsMovingRight)
         {
-            m_SpriteRenderer.flipX = true;
+            //newScale.x *= 1;
+            Flip();
             transform.localScale = newScale;
         }
         else
         {
-            m_SpriteRenderer.flipX = false;
+            //newScale.x *= -1;
             transform.localScale = newScale;
         }
 
@@ -82,6 +107,9 @@ public class DinoBase : MonoBehaviour, IDamageable
     {
         if(!m_IsAlive)
             return;
+
+        head.position = headpivot.position;
+        head.rotation = headpivot.rotation;
 
         m_TravelTimeCounter -= Time.deltaTime;
 
@@ -156,13 +184,26 @@ public class DinoBase : MonoBehaviour, IDamageable
     private void Flip()
     {
         m_IsMovingRight = !m_IsMovingRight;
-        m_SpriteRenderer.flipX = m_IsMovingRight;
+        Vector2 newScale = transform.localScale;
+        newScale.x *= -1;
+        transform.localScale = newScale;
         m_TravelTimeCounter = RandomTravelTime();
     }
 
     private float RandomTravelTime()
     {
         return Random.Range(travelTime.x, travelTime.y);
+    }
+
+    private void BecomeChild()
+    {
+        body.localScale = childSize;
+        head.transform.position = headpivot.position;
+
+        Vector2 colliderBound = body.GetComponent<SpriteRenderer>().sprite.bounds.size / 2;
+        m_Collider.size = colliderBound;
+        m_Animator.SetFloat("Speed", m_Animator.GetFloat("Speed") * 2);
+        //m_Collider.offset
     }
 
     protected void AttemptPlaySound(AudioClip[] potentialClips)

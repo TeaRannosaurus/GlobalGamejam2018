@@ -47,10 +47,12 @@ public class SpawnManager : MonoBehaviour
             if (species.amountAlive >= species.speciesMinMax.y)
                 break;
 
+            bool shouldBeChild = Random.value < species.childChange;
+
             Vector3 spawnPosition = new Vector3(Random.Range(minSpawnTransfrom.position.x, maxSpawnTransfrom.position.x), minSpawnTransfrom.position.y);
             GameObject dinoObject = Instantiate(species.speciesPrefab, spawnPosition, Quaternion.identity);
             DinoBase dinoBase = dinoObject.GetComponent<DinoBase>();
-            dinoBase.Init();    
+            dinoBase.Init(shouldBeChild);    
             species.amountAlive += 1;
         }
 
