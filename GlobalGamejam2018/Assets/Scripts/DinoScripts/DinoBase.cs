@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Graphs;
 using UnityEngine;
 
 public class DinoBase : MonoBehaviour, IDamageable
@@ -12,6 +13,9 @@ public class DinoBase : MonoBehaviour, IDamageable
     public Vector2 travelTime = new Vector2(0.5f, 3.0f);
 
     private bool m_IsAlive = true;
+    private bool m_IsMovingRight = true;
+    private float m_TravelTimeCounter = 0.0f;
+
 
     [Header("Base dino effects")]
     [SerializeField] private GameObject m_BloodParticleSystem   = null;
@@ -27,11 +31,9 @@ public class DinoBase : MonoBehaviour, IDamageable
     [SerializeField] private AudioClip[] m_DeathClips           = null;
     private SoundEffectManager m_SoundEffectManager             = null;
 
+    private SpriteRenderer m_SpriteRenderer                     = null;
+    private Animator m_Animator                                 = null;
 
-    private bool m_IsMovingRight = true;
-    private float m_TravelTimeCounter = 0.0f;
-
-    private Animator m_Animator = null;
 
     private void Start()
     {
@@ -42,6 +44,7 @@ public class DinoBase : MonoBehaviour, IDamageable
     {
         m_Animator = GetComponent<Animator>();
         m_SoundEffectManager = GetComponent<SoundEffectManager>();
+        m_SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         if(m_Animator == null)
             Debug.LogError("No animator found on this object", this);
@@ -57,12 +60,12 @@ public class DinoBase : MonoBehaviour, IDamageable
 
         if (m_IsMovingRight)
         {
-            newScale.x *= -1;
+            m_SpriteRenderer.flipX = true;
             transform.localScale = newScale;
         }
         else
         {
-            newScale.x *= 1;
+            m_SpriteRenderer.flipX = false;
             transform.localScale = newScale;
         }
 
@@ -123,7 +126,7 @@ public class DinoBase : MonoBehaviour, IDamageable
         m_IsAlive = false;
 
         m_Animator.enabled = false;
-        GetComponentInChildren<SpriteRenderer>().enabled = false;
+        m_SpriteRenderer.enabled = false;
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetComponent<BoxCollider2D>().enabled = false;
 
@@ -145,9 +148,7 @@ public class DinoBase : MonoBehaviour, IDamageable
     private void Flip()
     {
         m_IsMovingRight = !m_IsMovingRight;
-        Vector2 newScale = transform.localScale;
-        newScale.x *= -1;
-        transform.localScale = newScale;
+        m_SpriteRenderer.flipX = m_IsMovingRight;
         m_TravelTimeCounter = RandomTravelTime();
     }
 
