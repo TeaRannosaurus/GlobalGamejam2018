@@ -161,7 +161,8 @@ MonoBehaviour:
   m_FixedBodyPartSystems: []
   m_IdleClips: []
   m_IdleGruntChange: 0
-  m_MovementClips: []
+  m_MovementClips:
+  - {fileID: 0}
   m_Hurtclips: []
   m_DeathClips:
   - {fileID: 8300000, guid: 9611fbbf0a7f1a4489834bf65d63d2dd, type: 3}
