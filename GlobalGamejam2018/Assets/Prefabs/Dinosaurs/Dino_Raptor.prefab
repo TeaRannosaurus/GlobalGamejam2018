@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 61467181637154366}
   - component: {fileID: 114662136018577154}
   - component: {fileID: 95134661378718502}
-  m_Layer: 0
-  m_Name: Dino_Rapotor
-  m_TagString: Untagged
+  m_Layer: 8
+  m_Name: Dino_Raptor
+  m_TagString: Dino
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4789207463153948}
   - component: {fileID: 212926777061473684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Artwork
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,10 +146,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b201907085405943a63e736481c0200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speciesName: Unnamed species
   health: 1
   speed: 50
   changedirectionChance: 0.5
   travelTime: {x: 0.5, y: 3}
+  m_BloodParticleSystem: {fileID: 0}
+  m_FixedBodyPartSystems: []
+  m_IdleClips: []
+  m_IdleGruntChange: 0
+  m_MovementClips: []
+  m_Hurtclips: []
+  m_DeathClips: []
 --- !u!212 &212926777061473684
 SpriteRenderer:
   m_ObjectHideFlags: 1
