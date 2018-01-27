@@ -148,6 +148,7 @@ public class DinoBase : MonoBehaviour, IDamageable
         particleSystem.Play();
 
     */
+        GameObject.FindGameObjectWithTag("Manager").SendMessage("SpeciesDied", speciesName);
         AttemptPlaySound(m_DeathClips);
         Destroy(this.gameObject, 5.0f);
     }

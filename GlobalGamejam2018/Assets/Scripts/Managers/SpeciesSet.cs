@@ -3,9 +3,10 @@
 [System.Serializable]
 public class SpeciesSet
 {
+    public string speciesName       = "Unnamed";
     public GameObject speciesPrefab = null;
     public Vector2 speciesMinMax    = Vector2.zero;
     public Vector2 spawnBurst       = Vector2.zero;
 
-    [HideInInspector] public int amountAlive = 0;
+    public int amountAlive = 0;
 }

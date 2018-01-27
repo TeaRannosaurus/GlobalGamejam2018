@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114426919777100350}
   m_Layer: 0
   m_Name: Managers
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,10 +188,11 @@ MonoBehaviour:
   minSpawnTransfrom: {fileID: 4111103272227044}
   maxSpawnTransfrom: {fileID: 4987838438321212}
   allSpecies:
-  - speciesPrefab: {fileID: 1402451124984074, guid: 074adb658786c64498d89f1fe0785a58,
+  - speciesName: Trike
+    speciesPrefab: {fileID: 1402451124984074, guid: 074adb658786c64498d89f1fe0785a58,
       type: 2}
-    speciesMinMax: {x: 1, y: 10}
-    spawnBurst: {x: 1, y: 5}
+    speciesMinMax: {x: 1, y: 1}
+    spawnBurst: {x: 1, y: 1}
     amountAlive: 0
 --- !u!114 &114670158962637804
 MonoBehaviour:

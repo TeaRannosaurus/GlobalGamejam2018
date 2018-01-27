@@ -44,7 +44,7 @@ public class SpawnManager : MonoBehaviour
 
         for (int i = 0; i < amountToSpawn; i++)
         {
-            if (species.amountAlive > species.speciesMinMax.y)
+            if (species.amountAlive >= species.speciesMinMax.y)
                 break;
 
             Vector3 spawnPosition = new Vector3(Random.Range(minSpawnTransfrom.position.x, maxSpawnTransfrom.position.x), minSpawnTransfrom.position.y);
@@ -55,6 +55,17 @@ public class SpawnManager : MonoBehaviour
         }
 
 
+    }
+
+    public void SpeciesDied(string speciesName)
+    {
+        foreach (SpeciesSet species in allSpecies)
+        {
+            if (species.speciesName == speciesName)
+            {
+                species.amountAlive--;
+            }
+        }
     }
 
     private int CheckSpeciesAmount(SpeciesSet species)

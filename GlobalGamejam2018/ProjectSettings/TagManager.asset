@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dino
   - Effect
+  - Manager
   layers:
   - Default
   - TransparentFX
