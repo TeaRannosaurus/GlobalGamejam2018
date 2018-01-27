@@ -301,12 +301,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speciesName: Trike
-  health: 3
+  health: 2
   speed: 50
+  panicSpeed: 20
   changedirectionChance: 0.5
   travelTime: {x: 0.5, y: 3}
   isChild: 0
-  babyBodySize: {x: 1, y: 1, z: 0}
   body: {fileID: 4789207463153948}
   head: {fileID: 4702529937489680}
   headpivot: {fileID: 4022263821665880}
