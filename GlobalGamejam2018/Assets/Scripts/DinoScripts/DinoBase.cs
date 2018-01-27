@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DinoBase : MonoBehaviour
+public class DinoBase : MonoBehaviour, IDamageable
 {
     [Header("Base dino properties")]
     public int health       = 1;
@@ -11,18 +11,21 @@ public class DinoBase : MonoBehaviour
     public float changedirectionChance = 0.5f;
     public Vector2 travelTime = new Vector2(0.5f, 3.0f);
 
+    private bool m_IsAlive = true;
+
     [Header("Base dino effects")]
-    [SerializeField] private GameObject m_ParticleEffect = null;
-    [SerializeField] private Sprite[] m_FixedBodyParts = null;
-    [SerializeField] private Sprite[] m_RandomBodyParts = null;
+    [SerializeField] private GameObject m_BloodParticleSystem   = null;
+    [SerializeField] private GameObject[] m_FixedBodyPartSystems= null;
+    //[SerializeField] private Sprite[] m_FixedBodyParts          = null;
+    //[SerializeField] private Sprite[] m_RandomBodyParts         = null;
 
     [Header("Sound effects")]
-    [SerializeField] private AudioClip[] m_IdleClips = null;
+    [SerializeField] private AudioClip[] m_IdleClips            = null;
     [SerializeField] [Range(0.0f, 1.0f)] private float m_IdleGruntChange;
-    [SerializeField] private AudioClip[] m_MovementClips = null;
-    [SerializeField] private AudioClip[] m_Hurtclips = null;
-    [SerializeField] private AudioClip[] m_DeathClips = null;
-    private SoundEffectManager m_SoundEffectManager = null;
+    [SerializeField] private AudioClip[] m_MovementClips        = null;
+    [SerializeField] private AudioClip[] m_Hurtclips            = null;
+    [SerializeField] private AudioClip[] m_DeathClips           = null;
+    private SoundEffectManager m_SoundEffectManager             = null;
 
 
     private bool m_IsMovingRight = true;
@@ -62,6 +65,8 @@ public class DinoBase : MonoBehaviour
             newScale.x *= 1;
             transform.localScale = newScale;
         }
+
+        m_IsAlive = true;
     }
 
     public void PlayStepSound()
@@ -71,6 +76,9 @@ public class DinoBase : MonoBehaviour
 
     private void Update()
     {
+        if(!m_IsAlive)
+            return;
+
         m_TravelTimeCounter -= Time.deltaTime;
 
         if (m_TravelTimeCounter <= 0.0f)
@@ -93,6 +101,45 @@ public class DinoBase : MonoBehaviour
             newPosition = new Vector2(transform.position.x + speed * Time.deltaTime * -1.0f, transform.position.y);
 
         transform.position = newPosition;
+    }
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+
+        if (health <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            AttemptPlaySound(m_Hurtclips);
+        }
+    }
+
+
+    public void Die()
+    {
+        m_IsAlive = false;
+
+        m_Animator.enabled = false;
+        GetComponentInChildren<SpriteRenderer>().enabled = false;
+        GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        GetComponent<BoxCollider2D>().enabled = false;
+
+        foreach (GameObject bodyPartSystem in m_FixedBodyPartSystems)
+        {
+            GameObject newPartSystem = Instantiate(bodyPartSystem, transform.position, Quaternion.identity);
+            ParticleSystem particleSystemComp = newPartSystem.GetComponent<ParticleSystem>();
+            particleSystemComp.Play();
+        }
+        /*
+        GameObject particlesystemObject = Instantiate(m_BloodParticleSystem, transform.position, Quaternion.identity);
+        ParticleSystem particleSystem = particlesystemObject.GetComponent<ParticleSystem>();
+        particleSystem.Play();
+
+    */
+        AttemptPlaySound(m_DeathClips);
     }
 
     private void Flip()
