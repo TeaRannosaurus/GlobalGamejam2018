@@ -7,6 +7,7 @@ TagManager:
   - Dino
   - Effect
   - Manager
+  - Enviorment
   layers:
   - Default
   - TransparentFX

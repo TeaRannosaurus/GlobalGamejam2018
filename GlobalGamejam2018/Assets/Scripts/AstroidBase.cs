@@ -6,7 +6,12 @@ public class AstroidBase : MonoBehaviour
 {
     [Header("Astroid base properties")]
     public float movementSpeed = 10.0f;
+
+    public float shakeAmount = 5.0f;
+    public float shakeDuration = 1.0f;
     public Vector2 targetLocation;
+
+    private bool m_HasShaken = false;
 
     public void Init(Vector2 targetLocation)
     {
@@ -28,6 +33,16 @@ public class AstroidBase : MonoBehaviour
             {
                 IDamageable damageable = (IDamageable) posibleDamagebale;
                 damageable.TakeDamage(1);
+            }
+        }
+
+        if (other.tag == "Enviorment")
+        {
+            if (!m_HasShaken)
+            {
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShaker>().ShakeCamera(shakeDuration, shakeAmount);
+                m_HasShaken = true;
+                Destroy(gameObject, 2.0f);
             }
         }
     }

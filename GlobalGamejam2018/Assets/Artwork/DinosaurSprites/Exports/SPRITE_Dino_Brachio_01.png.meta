@@ -1,17 +1,17 @@
 fileFormatVersion: 2
 guid: 2952487349e717c4aa3778c66fb1323e
-timeCreated: 1517063553
+timeCreated: 1517066423
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SPRITE_Dino_Brachio_01_0
-    21300002: SPRITE_Dino_Brachio_01_1
-    21300004: SPRITE_Dino_Brachio_01_2
-    21300006: SPRITE_Dino_Brachio_01_3
-    21300008: SPRITE_Dino_Brachio_01_4
-    21300010: SPRITE_Dino_Brachio_01_5
-    21300012: SPRITE_Dino_Brachio_01_6
-    21300014: SPRITE_Dino_Brachio_01_7
+    21300000: SPRITE_Dino_Brachio_Head_01
+    21300002: SPRITE_Dino_Brachio_Part_02
+    21300004: SPRITE_Dino_Brachio_Part_04
+    21300006: SPRITE_Dino_Brachio_Part_05
+    21300008: SPRITE_Dino_Brachio_Part_07
+    21300010: SPRITE_Dino_Brachio_Part_01
+    21300012: SPRITE_Dino_Brachio_Part_03
+    21300014: SPRITE_Dino_Brachio_Part_06
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -30,7 +30,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 1
+  isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -84,53 +84,93 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPRITE_Dino_Brachio_01_0
+      name: SPRITE_Dino_Brachio_Head_01
       rect:
         serializedVersion: 2
         x: 0
         y: 51
         width: 14
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.8309197, y: 0.5454202}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Brachio_01_1
+      name: SPRITE_Dino_Brachio_Part_02
       rect:
         serializedVersion: 2
         x: 19
         y: 0
         width: 24
         height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4463788, y: 0.8402677}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Brachio_01_2
+      name: SPRITE_Dino_Brachio_Part_04
       rect:
         serializedVersion: 2
         x: 63
         y: 0
         width: 23
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.48880935, y: 0.8182178}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Brachio_01_3
+      name: SPRITE_Dino_Brachio_Part_05
       rect:
         serializedVersion: 2
         x: 91
@@ -138,63 +178,63 @@ TextureImporter:
         width: 66
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Brachio_01_4
+      name: SPRITE_Dino_Brachio_Part_07
       rect:
         serializedVersion: 2
         x: 196
         y: 0
         width: 113
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.8872116, y: 0.13836196}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Brachio_01_5
+      name: SPRITE_Dino_Brachio_Part_01
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 15
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.83012044}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Brachio_01_6
+      name: SPRITE_Dino_Brachio_Part_03
       rect:
         serializedVersion: 2
         x: 45
         y: 0
         width: 15
         height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.48284122, y: 0.8245252}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Brachio_01_7
+      name: SPRITE_Dino_Brachio_Part_06
       rect:
         serializedVersion: 2
         x: 87
         y: 0
         width: 103
         height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.06270051, y: 0.48970467}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
