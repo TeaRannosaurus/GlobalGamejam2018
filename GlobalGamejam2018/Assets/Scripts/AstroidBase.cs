@@ -49,6 +49,7 @@ public class AstroidBase : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShaker>().ShakeCamera(shakeDuration, shakeAmount);
                 m_HasShaken = true;
+                m_SoundEffectManager.StopAllAudio();
                 AttemptPlaySound(m_ImpactClips);
                 Destroy(gameObject, 2.0f);
             }
