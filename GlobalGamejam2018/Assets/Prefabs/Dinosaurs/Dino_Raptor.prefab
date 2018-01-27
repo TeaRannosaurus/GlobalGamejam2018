@@ -149,15 +149,22 @@ MonoBehaviour:
   speciesName: Unnamed species
   health: 1
   speed: 50
+  panicSpeed: 20
   changedirectionChance: 0.5
   travelTime: {x: 0.5, y: 3}
+  isChild: 0
+  body: {fileID: 0}
+  head: {fileID: 0}
+  headpivot: {fileID: 0}
+  childSize: {x: 1, y: 1, z: 1}
   m_BloodParticleSystem: {fileID: 0}
   m_FixedBodyPartSystems: []
   m_IdleClips: []
   m_IdleGruntChange: 0
   m_MovementClips: []
   m_Hurtclips: []
-  m_DeathClips: []
+  m_DeathClips:
+  - {fileID: 8300000, guid: 9611fbbf0a7f1a4489834bf65d63d2dd, type: 3}
 --- !u!212 &212926777061473684
 SpriteRenderer:
   m_ObjectHideFlags: 1
