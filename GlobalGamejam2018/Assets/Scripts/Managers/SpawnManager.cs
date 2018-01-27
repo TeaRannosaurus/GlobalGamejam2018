@@ -12,19 +12,27 @@ public class SpawnManager : MonoBehaviour
 
     public SpeciesSet[] allSpecies     = null;
 
-    private void Start()
+    public void Init()
     {
-        Init();
     }
 
-    public void Init()
+    public void GameSpawnLoop()
     {
         StartCoroutine("CheckTick");
     }
 
+    public void PopulateWorld()
+    {
+        foreach (var species in allSpecies)
+        {
+            SpawnSpecies(species, true);
+        }
+    }
+
+
     private IEnumerator CheckTick()
     {
-        while (true)
+        while (GameManager.Get.gameHasStarted)
         {
             foreach (var species in allSpecies)
             {
@@ -37,10 +45,9 @@ public class SpawnManager : MonoBehaviour
         }
 
         StopCoroutine("CheckTick");
-        yield break;
     }
 
-    private void SpawnSpecies(SpeciesSet species)
+    private void SpawnSpecies(SpeciesSet species, bool inScreen = false)
     {
         int amountToSpawn = (int)Random.Range(species.spawnBurst.x, species.spawnBurst.y);
 
@@ -53,13 +60,21 @@ public class SpawnManager : MonoBehaviour
 
             Vector3 spawnPosition = Vector3.zero;
 
-            if (Random.value < 0.5f)
-            {
-                spawnPosition = new Vector3(Random.Range(minSpawnTransfromLeft.position.x, maxSpawnTransfromRight.position.x), minSpawnTransfromRight.position.y);
+            if (!inScreen)
+            { 
+                if (Random.value < 0.5f)
+                {
+                    spawnPosition = new Vector3(Random.Range(minSpawnTransfromRight.position.x, maxSpawnTransfromRight.position.x), minSpawnTransfromRight.position.y);
+                }
+                else
+                {
+                    spawnPosition = new Vector3(Random.Range(minSpawnTransfromLeft.position.x, maxSpawnTransfromLeft.position.x), minSpawnTransfromLeft.position.y);
+                }
             }
             else
             {
-                spawnPosition = new Vector3(Random.Range(minSpawnTransfromLeft.position.x, maxSpawnTransfromLeft.position.x), minSpawnTransfromLeft.position.y);
+
+                spawnPosition = new Vector3(Random.Range(maxSpawnTransfromLeft.position.x, minSpawnTransfromRight.position.x), minSpawnTransfromLeft.position.y);
             }
 
             GameObject dinoObject = Instantiate(species.speciesPrefab, spawnPosition, Quaternion.identity);

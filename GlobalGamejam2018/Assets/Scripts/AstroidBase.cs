@@ -51,7 +51,7 @@ public class AstroidBase : MonoBehaviour
                 m_HasShaken = true;
                 m_SoundEffectManager.StopAllAudio();
                 AttemptPlaySound(m_ImpactClips);
-                Destroy(gameObject, 2.0f);
+                Destroy(gameObject, 5.0f);
             }
         }
     }

@@ -18,7 +18,7 @@ public class InputHandler : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && GameManager.Get.gameHasStarted)
         {
             OnTap(Input.mousePosition);
         }
@@ -34,7 +34,7 @@ public class InputHandler : MonoBehaviour
         Vector2 destination = Camera.main.ScreenToWorldPoint(pointerEventData.position - new Vector2(spawnPosition.x, spawnPosition.y));
         //destination.Normalize();
 
-        Vector2 finalDestination = destination * 2;
+        Vector2 finalDestination = destination;
 
         GameObject newAstroid = Instantiate(astroidObject, spawnPosition, Quaternion.identity);
         AstroidBase astroidScript = newAstroid.GetComponent<AstroidBase>();

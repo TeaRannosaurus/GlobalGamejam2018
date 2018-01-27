@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class GameManager : SingletonInstance<GameManager>
 {
     [Header("Game manager properties")]
     public float gameTime = 60.0f;
-    public bool hasStarted = false;
+    public bool gameHasStarted { private set; get; }
 
     [Header("UI elements")]
     [SerializeField] private Text m_TimerText = null;
@@ -16,18 +16,23 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Init();
+        GetComponentInChildren<SpawnManager>().PopulateWorld();
+    }
+
+    public void StartGame()
+    {
+        Init();        
     }
 
     public void Init()
     {
         m_GameTimeCounter = gameTime;
-        hasStarted = true;
+        gameHasStarted = true;
     }
 
     private void Update()
     {
-        if (!hasStarted)
+        if (!gameHasStarted)
             return;
 
         m_GameTimeCounter -= Time.deltaTime;
@@ -35,7 +40,7 @@ public class GameManager : MonoBehaviour
 
         if (m_GameTimeCounter <= 0)
         {
-            hasStarted = false;
+            gameHasStarted = false;
             m_GameTimeCounter = 0.0f;
         }
 

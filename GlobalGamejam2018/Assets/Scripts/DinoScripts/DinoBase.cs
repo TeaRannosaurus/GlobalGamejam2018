@@ -110,6 +110,9 @@ public class DinoBase : MonoBehaviour, IDamageable
         if(!m_IsAlive)
             return;
 
+        if(transform.position.y < -200.0f)
+            Die();
+
         head.position = headpivot.position;
         head.rotation = headpivot.rotation;
 
@@ -175,7 +178,6 @@ public class DinoBase : MonoBehaviour, IDamageable
             GameObject newPartSystem = Instantiate(bodyPartSystem, transform.position, Quaternion.identity);
             ParticleSystem particleSystemComp = newPartSystem.GetComponent<ParticleSystem>();
             particleSystemComp.Play();
-            //Destroy(newPartSystem, 5.0f);
             
         }
         /*
