@@ -160,6 +160,13 @@ public class DinoBase : MonoBehaviour, IDamageable
 
         m_Animator.enabled = false;
         m_SpriteRenderer.enabled = false;
+
+        SpriteRenderer[] spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
+        foreach (var spriteRenderer in spriteRenderers)
+        {
+            spriteRenderer.enabled = false;
+        }
+
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetComponent<BoxCollider2D>().enabled = false;
         head.GetComponent<SpriteRenderer>().enabled = false;
