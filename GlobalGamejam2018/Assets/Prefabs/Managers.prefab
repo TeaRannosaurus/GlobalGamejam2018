@@ -191,9 +191,9 @@ MonoBehaviour:
   - speciesName: Trike
     speciesPrefab: {fileID: 1402451124984074, guid: 074adb658786c64498d89f1fe0785a58,
       type: 2}
-    speciesMinMax: {x: 1, y: 20}
+    speciesMinMax: {x: 1, y: 10}
     spawnBurst: {x: 1, y: 10}
-    childChange: 0.25
+    childChange: 0.2
     amountAlive: 0
 --- !u!114 &114670158962637804
 MonoBehaviour:
