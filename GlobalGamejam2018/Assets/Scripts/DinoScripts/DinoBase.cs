@@ -96,6 +96,9 @@ public class DinoBase : MonoBehaviour, IDamageable
             }
         }
 
+        if(Random.value < m_IdleGruntChange)
+            AttemptPlaySound(m_IdleClips);
+
         Vector2 newPosition = Vector2.zero;
 
         if (m_IsMovingRight)
@@ -135,6 +138,8 @@ public class DinoBase : MonoBehaviour, IDamageable
             GameObject newPartSystem = Instantiate(bodyPartSystem, transform.position, Quaternion.identity);
             ParticleSystem particleSystemComp = newPartSystem.GetComponent<ParticleSystem>();
             particleSystemComp.Play();
+            //Destroy(newPartSystem, 5.0f);
+            
         }
         /*
         GameObject particlesystemObject = Instantiate(m_BloodParticleSystem, transform.position, Quaternion.identity);
@@ -143,6 +148,7 @@ public class DinoBase : MonoBehaviour, IDamageable
 
     */
         AttemptPlaySound(m_DeathClips);
+        Destroy(this.gameObject, 5.0f);
     }
 
     private void Flip()

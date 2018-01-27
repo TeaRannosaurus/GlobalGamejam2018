@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 95134661378718502}
   - component: {fileID: 82374925032167158}
   - component: {fileID: 114039409694435028}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dino_Trike
   m_TagString: Dino
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4789207463153948}
   - component: {fileID: 212926777061473684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Artwork
   m_TagString: Untagged
   m_Icon: {fileID: 0}
