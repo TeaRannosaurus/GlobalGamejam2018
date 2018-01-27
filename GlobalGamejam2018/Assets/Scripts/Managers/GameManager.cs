@@ -11,6 +11,8 @@ public class GameManager : SingletonInstance<GameManager>
 
     [Header("UI elements")]
     [SerializeField] private Text m_TimerText = null;
+    [SerializeField] private GameObject m_GameUI = null;
+
 
     private float m_GameTimeCounter = 0.0f;
 
@@ -28,6 +30,7 @@ public class GameManager : SingletonInstance<GameManager>
     {
         m_GameTimeCounter = gameTime;
         gameHasStarted = true;
+        m_GameUI.SetActive(true);
     }
 
     private void Update()
