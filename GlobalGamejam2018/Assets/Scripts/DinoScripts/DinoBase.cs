@@ -161,7 +161,7 @@ public class DinoBase : MonoBehaviour, IDamageable
         m_SpriteRenderer.enabled = false;
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         GetComponent<BoxCollider2D>().enabled = false;
-
+        head.GetComponent<SpriteRenderer>().enabled = false;
         foreach (GameObject bodyPartSystem in m_FixedBodyPartSystems)
         {
             GameObject newPartSystem = Instantiate(bodyPartSystem, transform.position, Quaternion.identity);
@@ -203,6 +203,7 @@ public class DinoBase : MonoBehaviour, IDamageable
         Vector2 colliderBound = body.GetComponent<SpriteRenderer>().sprite.bounds.size / 2;
         m_Collider.size = colliderBound;
         m_Animator.SetFloat("Speed", m_Animator.GetFloat("Speed") * 2);
+        health = 1;
         //m_Collider.offset
     }
 
