@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 50819789458254948}
   - component: {fileID: 61467181637154366}
   - component: {fileID: 114662136018577154}
+  - component: {fileID: 95134661378718502}
   m_Layer: 0
   m_Name: Dino_Rapotor
   m_TagString: Untagged
@@ -51,7 +52,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1402451124984074}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -117,6 +118,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 13.561841, y: 16.48323}
   m_EdgeRadius: 0
+--- !u!95 &95134661378718502
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402451124984074}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d52c6fd90055599468f5591f8419e0e0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114662136018577154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,7 +147,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  speed: 2
+  speed: 50
+  changedirectionChance: 0.5
+  travelTime: {x: 0.5, y: 3}
 --- !u!212 &212926777061473684
 SpriteRenderer:
   m_ObjectHideFlags: 1
