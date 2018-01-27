@@ -7,6 +7,7 @@ public class SpeciesSet
     public GameObject speciesPrefab = null;
     public Vector2 speciesMinMax    = Vector2.zero;
     public Vector2 spawnBurst       = Vector2.zero;
+    [Range(0.0f, 1.0f)] public float childChange = 0.25f;
 
-    public int amountAlive = 0;
+    [HideInInspector] public int amountAlive = 0;
 }
