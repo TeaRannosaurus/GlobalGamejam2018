@@ -17,4 +17,18 @@ public class AstroidBase : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, targetLocation, movementSpeed*Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        MonoBehaviour[] posibleDamagebales = other.GetComponents<MonoBehaviour>();
+
+        foreach (MonoBehaviour posibleDamagebale in posibleDamagebales)
+        {
+            if (posibleDamagebale is IDamageable)
+            {
+                IDamageable damageable = (IDamageable) posibleDamagebale;
+                damageable.TakeDamage(1);
+            }
+        }
+    }
 }
