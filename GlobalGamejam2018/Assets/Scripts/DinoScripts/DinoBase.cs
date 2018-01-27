@@ -9,6 +9,7 @@ public class DinoBase : MonoBehaviour, IDamageable
     public string speciesName   = "Unnamed species";
     public int health           = 1;
     public float speed          = 10.0f;
+    public float panicSpeed     = 20.0f;
 
     public float changedirectionChance = 0.5f;
     public Vector2 travelTime = new Vector2(0.5f, 3.0f);
@@ -18,7 +19,7 @@ public class DinoBase : MonoBehaviour, IDamageable
     private bool m_IsAlive = true;
     private bool m_IsMovingRight = true;
     private float m_TravelTimeCounter = 0.0f;
-
+    private bool m_InPanic = false;
 
     [Header("Dino size")]
     public Transform body = null;
@@ -96,6 +97,7 @@ public class DinoBase : MonoBehaviour, IDamageable
         }
 
         m_IsAlive = true;
+        m_InPanic = false;
     }
 
     public void PlayStepSound()
@@ -152,7 +154,6 @@ public class DinoBase : MonoBehaviour, IDamageable
         }
     }
 
-
     public void Die()
     {
         m_IsAlive = false;
@@ -205,6 +206,12 @@ public class DinoBase : MonoBehaviour, IDamageable
         m_Animator.SetFloat("Speed", m_Animator.GetFloat("Speed") * 2);
         health = 1;
         //m_Collider.offset
+    }
+
+    public void EnterPanicMode()
+    {
+        m_InPanic = true;
+
     }
 
     protected void AttemptPlaySound(AudioClip[] potentialClips)
