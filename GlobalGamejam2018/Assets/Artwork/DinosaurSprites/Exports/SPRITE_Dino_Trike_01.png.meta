@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 93f319a6a211cd848b08f6c965d514a2
-timeCreated: 1517050055
+timeCreated: 1517051486
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -22,6 +22,7 @@ TextureImporter:
     21300030: SPRITE_Dino_Trike_01_8
     21300032: SPRITE_Dino_Trike_01_9
     21300034: SPRITE_Dino_Trike_01_10
+    21300036: SPRITE_Dino_Trike_01_11
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -103,8 +104,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 38
-        width: 89
-        height: 36
+        width: 72
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,10 +116,10 @@ TextureImporter:
       name: SPRITE_Dino_Trike_01_1
       rect:
         serializedVersion: 2
-        x: 90
+        x: 73
         y: 38
-        width: 89
-        height: 36
+        width: 71
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,10 +130,10 @@ TextureImporter:
       name: SPRITE_Dino_Trike_01_2
       rect:
         serializedVersion: 2
-        x: 180
+        x: 145
         y: 38
-        width: 89
-        height: 36
+        width: 71
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +144,10 @@ TextureImporter:
       name: SPRITE_Dino_Trike_01_3
       rect:
         serializedVersion: 2
-        x: 270
+        x: 217
         y: 38
-        width: 89
-        height: 36
+        width: 70
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,6 +240,20 @@ TextureImporter:
       tessellationDetail: 0
     - serializedVersion: 2
       name: SPRITE_Dino_Trike_01_10
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 9
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Trike_01_11
       rect:
         serializedVersion: 2
         x: 0
