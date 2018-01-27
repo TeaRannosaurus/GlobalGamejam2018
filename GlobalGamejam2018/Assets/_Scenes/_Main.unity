@@ -168,7 +168,7 @@ Transform:
   m_GameObject: {fileID: 250152513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -69.88, z: 0}
-  m_LocalScale: {x: 0.71305215, y: 0.40428963, z: 1}
+  m_LocalScale: {x: 3.9352965, y: 0.40428963, z: 1}
   m_Children: []
   m_Father: {fileID: 2118887386}
   m_RootOrder: 0
@@ -270,7 +270,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 100
+  orthographic size: 250
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -293,7 +293,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 336208849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 158, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -380,7 +380,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 653183200}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -518,6 +518,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4463984774717728, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -549,6 +554,57 @@ Prefab:
     - target: {fileID: 4463984774717728, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[1].speciesName
+      value: Brachio
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[1].speciesPrefab
+      value: 
+      objectReference: {fileID: 1519703182759890, guid: 5e33fda925a968843846dfc1f2776c9e,
+        type: 2}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[1].speciesMinMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[1].speciesMinMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[1].spawnBurst.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[1].spawnBurst.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[1].childChange
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[0].speciesMinMax.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[0].childChange
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[0].spawnBurst.y
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
@@ -650,7 +706,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 983184684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -836,5 +892,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 354.9796, y: 58.547028}
+  m_Size: {x: 1966.4893, y: 58.547028}
   m_EdgeRadius: 0
