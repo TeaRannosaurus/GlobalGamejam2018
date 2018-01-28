@@ -325,10 +325,7 @@ MonoBehaviour:
   m_IdleClips:
   - {fileID: 0}
   m_IdleGruntChange: 0.001
-  m_MovementClips:
-  - {fileID: 8300000, guid: e3d4b7cc8e7d600419b70868a6777864, type: 3}
-  - {fileID: 8300000, guid: 6972216c55666544f93f0d61a936416f, type: 3}
-  - {fileID: 8300000, guid: f03361ce6f9a3a34696a9bedc580baa8, type: 3}
+  m_MovementClips: []
   m_Hurtclips:
   - {fileID: 0}
   - {fileID: 0}
