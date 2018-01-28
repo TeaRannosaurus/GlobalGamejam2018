@@ -104,7 +104,7 @@ public class DinoBase : MonoBehaviour, IDamageable
 
     public void PlayStepSound()
     {
-        AttemptPlaySound(m_MovementClips);
+        //AttemptPlaySound(m_MovementClips);
     }
 
     public void InitiatePanic()
