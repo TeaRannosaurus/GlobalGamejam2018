@@ -26,7 +26,8 @@ public class GameManager : SingletonInstance<GameManager>
 
     public void StartGame()
     {
-        Init();        
+        Init();
+        GetComponentInChildren<SpawnManager>().GameSpawnLoop();
     }
 
     public void Init()
