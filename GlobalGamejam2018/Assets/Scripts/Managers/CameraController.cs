@@ -15,11 +15,11 @@ public class CameraController : MonoBehaviour
 
     private Camera m_Camera;
 
-    private void Awake()
+    private void Start()
     {
         m_Camera = GetComponentInChildren<Camera>();
 
-        if (m_Camera.orthographic)
+        if (m_Camera.orthographic && scale != 1)
         {
             scale = Screen.height / nativeResolustion.y;
             pixelsToUnits *= scale;
