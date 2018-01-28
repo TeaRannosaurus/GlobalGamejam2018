@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 85702658ec223e34e8764151eb14b761
-timeCreated: 1517107077
+timeCreated: 1517107649
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,14 +8,15 @@ TextureImporter:
     21300002: SPRITE_Dino_Spino_01_1
     21300004: SPRITE_Dino_Spino_01_2
     21300006: SPRITE_Dino_Spino_01_3
-    21300008: SPRITE_Dino_Spino_01_4
-    21300010: SPRITE_Dino_Spino_01_5
-    21300012: SPRITE_Dino_Spino_01_6
-    21300014: SPRITE_Dino_Spino_01_7
-    21300016: SPRITE_Dino_Spino_01_8
-    21300018: SPRITE_Dino_Spino_01_9
-    21300020: SPRITE_Dino_Spino_01_10
-    21300022: SPRITE_Dino_Spino_01_11
+    21300008: SPRITE_Dino_Spino_Jaw_01
+    21300010: SPRITE_Dino_Spino_Part_02
+    21300012: SPRITE_Dino_Spino_Part_03
+    21300014: SPRITE_Dino_Spino_Part_05
+    21300016: SPRITE_Dino_Spino_Part_06
+    21300018: SPRITE_Dino_Spino_Part_01
+    21300020: SPRITE_Dino_Spino_Part_04
+    21300022: SPRITE_Dino_Spino_Part_07
+    21300024: SPRITE_Dino_Spino_Head_01
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -97,7 +98,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 38
-        width: 96
+        width: 86
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -109,9 +110,9 @@ TextureImporter:
       name: SPRITE_Dino_Spino_01_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 87
         y: 38
-        width: 96
+        width: 86
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -123,9 +124,9 @@ TextureImporter:
       name: SPRITE_Dino_Spino_01_2
       rect:
         serializedVersion: 2
-        x: 194
+        x: 174
         y: 38
-        width: 96
+        width: 86
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,9 +138,9 @@ TextureImporter:
       name: SPRITE_Dino_Spino_01_3
       rect:
         serializedVersion: 2
-        x: 291
+        x: 261
         y: 38
-        width: 96
+        width: 86
         height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -148,7 +149,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Spino_01_4
+      name: SPRITE_Dino_Spino_Jaw_01
       rect:
         serializedVersion: 2
         x: 0
@@ -162,7 +163,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Spino_01_5
+      name: SPRITE_Dino_Spino_Part_02
       rect:
         serializedVersion: 2
         x: 14
@@ -176,7 +177,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Spino_01_6
+      name: SPRITE_Dino_Spino_Part_03
       rect:
         serializedVersion: 2
         x: 35
@@ -190,7 +191,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Spino_01_7
+      name: SPRITE_Dino_Spino_Part_05
       rect:
         serializedVersion: 2
         x: 46
@@ -204,7 +205,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Spino_01_8
+      name: SPRITE_Dino_Spino_Part_06
       rect:
         serializedVersion: 2
         x: 63
@@ -218,7 +219,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Spino_01_9
+      name: SPRITE_Dino_Spino_Part_01
       rect:
         serializedVersion: 2
         x: 2
@@ -232,7 +233,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Spino_01_10
+      name: SPRITE_Dino_Spino_Part_04
       rect:
         serializedVersion: 2
         x: 32
@@ -246,12 +247,26 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: SPRITE_Dino_Spino_01_11
+      name: SPRITE_Dino_Spino_Part_07
       rect:
         serializedVersion: 2
         x: 61
         y: 3
         width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Spino_Head_01
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 6
+        width: 13
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
