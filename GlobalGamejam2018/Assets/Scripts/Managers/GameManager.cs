@@ -26,6 +26,7 @@ public class GameManager : SingletonInstance<GameManager>
     [SerializeField] private GameObject m_EndGameUI = null;
     [SerializeField] private Text m_EndScoreText = null;
 
+    private bool m_GameHasEnded = false;
     private float m_GameTimeCounter = 0.0f;
     private bool m_PanicHasStarted = false;
 
@@ -77,6 +78,10 @@ public class GameManager : SingletonInstance<GameManager>
         {
             gameHasStarted = false;
             m_GameTimeCounter = 0.0f;
+            if (!m_GameHasEnded)
+            {
+                EndGame();
+            }
         }
 
         UpdateUI();
@@ -89,6 +94,8 @@ public class GameManager : SingletonInstance<GameManager>
 
     private void EndGame()
     {
+        m_GameHasEnded = true;
+
         m_GameTimeCounter = 0;
 
         GameObject[] allDinos = GameObject.FindGameObjectsWithTag("Dino");

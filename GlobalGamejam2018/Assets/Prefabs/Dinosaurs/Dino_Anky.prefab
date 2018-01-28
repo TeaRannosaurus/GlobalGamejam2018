@@ -86,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1285209193513012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -216, y: -264.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4145772366901542}
@@ -302,14 +302,13 @@ MonoBehaviour:
   childSize: {x: 0.5, y: 0.5, z: 0.5}
   m_BloodParticleSystem: {fileID: 0}
   m_FixedBodyPartSystems:
-  - {fileID: 1396113664198684, guid: 193b60547f2e65f4287b4e2ce446b5a9, type: 2}
-  - {fileID: 1840594058587410, guid: cec47f0b2830ae141858d06f71e088db, type: 2}
-  - {fileID: 1002280681516896, guid: 58a830f3d2e785749b468cb88fd3711c, type: 2}
-  - {fileID: 1882336417288832, guid: d77fed9d5436cec4797e6a1252520d05, type: 2}
-  - {fileID: 1631148493017432, guid: 2ab9cc432ddaf8f4ab5e90626c4de00f, type: 2}
-  - {fileID: 1288102803652182, guid: 8e2364a3bca74274c9b58479b972dcd2, type: 2}
-  - {fileID: 1164473924917010, guid: 1e2c21f336ce6a542bcb86670fb8d6f5, type: 2}
-  - {fileID: 1580975767031694, guid: d282f9ff6ad81df43b8ef62379bd3f5b, type: 2}
+  - {fileID: 1662714708299552, guid: 2b36f5aa1077aca439b8174f413ea495, type: 2}
+  - {fileID: 1775191402688814, guid: f9df0df11b76c7047a9be8f918e696c8, type: 2}
+  - {fileID: 1472748385340028, guid: 81beacf84c1dd9f45a65a672f0c17cd9, type: 2}
+  - {fileID: 1589553238898024, guid: 729b767be935be048bf2292037bed7bc, type: 2}
+  - {fileID: 1530972254063626, guid: fab0fe41767d9854ebdf8476d5fece45, type: 2}
+  - {fileID: 1720060529032966, guid: 38a6b710c66fcbe429cf8a49f2f3c6c5, type: 2}
+  - {fileID: 1446423448770692, guid: 1909dff935510334ab2723ad069327dd, type: 2}
   m_IdleClips:
   - {fileID: 0}
   m_IdleGruntChange: 0.001
