@@ -10,6 +10,8 @@ public class DinoBase : MonoBehaviour, IDamageable
     public int health           = 1;
     public float speed          = 10.0f;
     public float panicSpeed     = 20.0f;
+    public int scoreWorth       = 10;
+    public float babyScoreMultyplier = 2.0f;
 
     public float changedirectionChance = 0.5f;
     public Vector2 travelTime = new Vector2(0.5f, 3.0f);
@@ -197,6 +199,8 @@ public class DinoBase : MonoBehaviour, IDamageable
 
     */
         GameObject.FindGameObjectWithTag("Manager").SendMessage("SpeciesDied", speciesName);
+
+        GameManager.Get.score += scoreWorth;
         AttemptPlaySound(m_DeathClips);
         Destroy(this.gameObject, 5.0f);
     }
@@ -223,6 +227,7 @@ public class DinoBase : MonoBehaviour, IDamageable
         Vector2 colliderBound = body.GetComponent<SpriteRenderer>().sprite.bounds.size / 2;
         m_Collider.size = colliderBound;
         m_Animator.SetFloat("Speed", m_Animator.GetFloat("Speed") * 2);
+        scoreWorth = (int)(scoreWorth * babyScoreMultyplier);
         health = 1;
         //m_Collider.offset
     }

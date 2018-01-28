@@ -371,6 +371,13 @@ MonoBehaviour:
     spawnBurst: {x: 1, y: 2}
     childChange: 0.2
     amountAlive: 0
+  - speciesName: Spino
+    speciesPrefab: {fileID: 1022840678637606, guid: e97c52b5724b2d54e9f8aaf2b83777e0,
+      type: 2}
+    speciesMinMax: {x: 1, y: 5}
+    spawnBurst: {x: 1, y: 2}
+    childChange: 0.2
+    amountAlive: 0
 --- !u!114 &114459891189747074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -385,6 +392,12 @@ MonoBehaviour:
   backGrounds:
   - background: {fileID: 0}
     parallaxScale: 1
+  - background: {fileID: 0}
+    parallaxScale: 0.5
+  - background: {fileID: 0}
+    parallaxScale: 5
+  - background: {fileID: 0}
+    parallaxScale: 7.5
   smoothing: 1
 --- !u!114 &114670158962637804
 MonoBehaviour:
@@ -398,7 +411,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTime: 60
+  score: 0
   m_TimerText: {fileID: 0}
+  m_ScoreText: {fileID: 0}
   m_GameUI: {fileID: 0}
 --- !u!114 &114771548685249948
 MonoBehaviour:
