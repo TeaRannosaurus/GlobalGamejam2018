@@ -564,11 +564,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.size
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 4463984774717728, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -636,62 +631,6 @@ Prefab:
       propertyPath: m_GameUI
       value: 
       objectReference: {fileID: 214714733}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[0].speciesMinMax.y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[0].spawnBurst.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[0].spawnBurst.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[1].speciesMinMax.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[4].speciesName
-      value: Stego
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[4].speciesPrefab
-      value: 
-      objectReference: {fileID: 1330784109644844, guid: 8201784749538e647abb3834583c8c8f,
-        type: 2}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[4].speciesMinMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[4].speciesMinMax.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[4].spawnBurst.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[4].spawnBurst.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[4].childChange
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 114670158962637804, guid: c2aebb28ce416954a9cb194e4504ee64,
         type: 2}
       propertyPath: m_EndGameUI
@@ -702,83 +641,6 @@ Prefab:
       propertyPath: m_EndScoreText
       value: 
       objectReference: {fileID: 2015357089}
-    - target: {fileID: 114670158962637804, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: endKey
-      value: 119
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[5].speciesName
-      value: Anky
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[5].speciesPrefab
-      value: 
-      objectReference: {fileID: 1285209193513012, guid: 042f2c2bc63e24149b9e7deef0bda05f,
-        type: 2}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[5].speciesMinMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[5].speciesMinMax.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[5].spawnBurst.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[5].spawnBurst.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[5].childChange
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[6].speciesName
-      value: Raptor
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[6].speciesPrefab
-      value: 
-      objectReference: {fileID: 1285209193513012, guid: 042f2c2bc63e24149b9e7deef0bda05f,
-        type: 2}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[6].speciesMinMax.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[6].speciesMinMax.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[6].spawnBurst.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[6].spawnBurst.y
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
-        type: 2}
-      propertyPath: allSpecies.Array.data[6].childChange
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
   m_IsPrefabParent: 0
@@ -1399,6 +1261,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114497585563457010, guid: 8201784749538e647abb3834583c8c8f,
+        type: 2}
+      propertyPath: m_FixedBodyPartSystems.Array.size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4853500188817184, guid: 8201784749538e647abb3834583c8c8f, type: 2}
       propertyPath: m_LocalPosition.x
       value: -237
@@ -1431,6 +1298,54 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114497585563457010, guid: 8201784749538e647abb3834583c8c8f,
+        type: 2}
+      propertyPath: m_FixedBodyPartSystems.Array.data[0]
+      value: 
+      objectReference: {fileID: 1548016034594346, guid: d64eeefc13dcce74ba77cf032c0390a3,
+        type: 2}
+    - target: {fileID: 114497585563457010, guid: 8201784749538e647abb3834583c8c8f,
+        type: 2}
+      propertyPath: m_FixedBodyPartSystems.Array.data[1]
+      value: 
+      objectReference: {fileID: 1740933169881700, guid: 780d4397aded5f340a5643b52bfa8b20,
+        type: 2}
+    - target: {fileID: 114497585563457010, guid: 8201784749538e647abb3834583c8c8f,
+        type: 2}
+      propertyPath: m_FixedBodyPartSystems.Array.data[2]
+      value: 
+      objectReference: {fileID: 1675059635130468, guid: 2d11d88e557e79044837443734043d11,
+        type: 2}
+    - target: {fileID: 114497585563457010, guid: 8201784749538e647abb3834583c8c8f,
+        type: 2}
+      propertyPath: m_FixedBodyPartSystems.Array.data[3]
+      value: 
+      objectReference: {fileID: 1323939690503702, guid: 4268dcc162785c041a37bcb25b5749ae,
+        type: 2}
+    - target: {fileID: 114497585563457010, guid: 8201784749538e647abb3834583c8c8f,
+        type: 2}
+      propertyPath: m_FixedBodyPartSystems.Array.data[4]
+      value: 
+      objectReference: {fileID: 1535670002705510, guid: 3c8174baebb8f5f4bb510e81c48de40b,
+        type: 2}
+    - target: {fileID: 114497585563457010, guid: 8201784749538e647abb3834583c8c8f,
+        type: 2}
+      propertyPath: m_FixedBodyPartSystems.Array.data[5]
+      value: 
+      objectReference: {fileID: 1026434574458344, guid: cdb76976ed5e0c94ba2bebbe8a83c8dd,
+        type: 2}
+    - target: {fileID: 114497585563457010, guid: 8201784749538e647abb3834583c8c8f,
+        type: 2}
+      propertyPath: m_FixedBodyPartSystems.Array.data[6]
+      value: 
+      objectReference: {fileID: 1708228723888976, guid: 38136ecc43d70864da87b65ac24ee818,
+        type: 2}
+    - target: {fileID: 114497585563457010, guid: 8201784749538e647abb3834583c8c8f,
+        type: 2}
+      propertyPath: m_FixedBodyPartSystems.Array.data[7]
+      value: 
+      objectReference: {fileID: 1465487804637324, guid: ee91b338c1f3ef94c9f09dc9cea0e9ec,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8201784749538e647abb3834583c8c8f, type: 2}
   m_IsPrefabParent: 0
