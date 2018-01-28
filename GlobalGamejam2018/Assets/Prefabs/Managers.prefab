@@ -356,18 +356,19 @@ MonoBehaviour:
   maxSpawnTransfromLeft: {fileID: 4908518563135694}
   minSpawnTransfromRight: {fileID: 4848621645465950}
   maxSpawnTransfromRight: {fileID: 4044853132326378}
+  spawnRoutine: 0.5
   allSpecies:
   - speciesName: Trike
     speciesPrefab: {fileID: 1402451124984074, guid: 074adb658786c64498d89f1fe0785a58,
       type: 2}
-    speciesMinMax: {x: 1, y: 50}
-    spawnBurst: {x: 5, y: 10}
+    speciesMinMax: {x: 1, y: 15}
+    spawnBurst: {x: 2, y: 5}
     childChange: 0.3
     amountAlive: 0
   - speciesName: Brachio
     speciesPrefab: {fileID: 1519703182759890, guid: 5e33fda925a968843846dfc1f2776c9e,
       type: 2}
-    speciesMinMax: {x: 1, y: 3}
+    speciesMinMax: {x: 1, y: 5}
     spawnBurst: {x: 1, y: 2}
     childChange: 0.2
     amountAlive: 0
@@ -383,6 +384,27 @@ MonoBehaviour:
       type: 2}
     speciesMinMax: {x: 1, y: 5}
     spawnBurst: {x: 1, y: 2}
+    childChange: 0.2
+    amountAlive: 0
+  - speciesName: Stego
+    speciesPrefab: {fileID: 1330784109644844, guid: 8201784749538e647abb3834583c8c8f,
+      type: 2}
+    speciesMinMax: {x: 1, y: 5}
+    spawnBurst: {x: 1, y: 2}
+    childChange: 0.2
+    amountAlive: 0
+  - speciesName: Anky
+    speciesPrefab: {fileID: 1285209193513012, guid: 042f2c2bc63e24149b9e7deef0bda05f,
+      type: 2}
+    speciesMinMax: {x: 1, y: 5}
+    spawnBurst: {x: 1, y: 2}
+    childChange: 0.2
+    amountAlive: 0
+  - speciesName: Raptor
+    speciesPrefab: {fileID: 1285209193513012, guid: 042f2c2bc63e24149b9e7deef0bda05f,
+      type: 2}
+    speciesMinMax: {x: 10, y: 50}
+    spawnBurst: {x: 5, y: 25}
     childChange: 0.2
     amountAlive: 0
 --- !u!114 &114459891189747074
@@ -419,9 +441,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameTime: 60
   score: 0
+  endKey: 119
   m_TimerText: {fileID: 0}
   m_ScoreText: {fileID: 0}
   m_GameUI: {fileID: 0}
+  m_EndGameUI: {fileID: 0}
+  m_EndScoreText: {fileID: 0}
 --- !u!114 &114771548685249948
 MonoBehaviour:
   m_ObjectHideFlags: 1
