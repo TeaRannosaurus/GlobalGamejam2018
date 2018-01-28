@@ -332,13 +332,13 @@ MonoBehaviour:
   childSize: {x: 0.5, y: 0.5, z: 0.5}
   m_BloodParticleSystem: {fileID: 0}
   m_FixedBodyPartSystems:
-  - {fileID: 1754391728937190, guid: 9a02fb973adfd8944a06362a39ee8f42, type: 2}
-  - {fileID: 1872237433450418, guid: ccaa4a2496c2ddf4fafed575e5423313, type: 2}
-  - {fileID: 1117391384531582, guid: 923d9628b8f0c394c814b01c118e8132, type: 2}
-  - {fileID: 1410776699050124, guid: 0c9919b5a7574a8439824b9f4a14b41f, type: 2}
-  - {fileID: 1222437286116398, guid: 9355ff2aab20db14c86a6e0b82235580, type: 2}
-  - {fileID: 1410776699050124, guid: 735d158e3e09f0246be94a096638df0a, type: 2}
-  - {fileID: 1218515893174284, guid: 19d268adfb599324ca92d053e9f97f65, type: 2}
+  - {fileID: 1510019299844922, guid: 0a79b5a19553d2640a00725b125d8aa7, type: 2}
+  - {fileID: 1511282401175756, guid: f64f3e417e6bfe144b95269a3e1b74c1, type: 2}
+  - {fileID: 1466542158462912, guid: 86d0b92cc2881704e9ba9dfe84c55160, type: 2}
+  - {fileID: 1259090313570288, guid: cd7f64d9faf012b4d8a2c102702093e9, type: 2}
+  - {fileID: 1898569923465218, guid: 00052a1ca09c0614ba0f70299065d74d, type: 2}
+  - {fileID: 1117186117967150, guid: 9efb6c067b2183546bffdd5498f7f7ca, type: 2}
+  - {fileID: 1862107335421754, guid: 676e2551359a03147944a85551c98552, type: 2}
   m_IdleClips:
   - {fileID: 0}
   m_IdleGruntChange: 0.001

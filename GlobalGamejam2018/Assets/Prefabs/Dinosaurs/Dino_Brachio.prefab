@@ -502,6 +502,7 @@ MonoBehaviour:
   - {fileID: 1960807455584204, guid: a01d880a9c1512a4b82d48b8eb47bcc9, type: 2}
   - {fileID: 1094040427644936, guid: c23dd08cb2cf97a4db3baa11179309eb, type: 2}
   - {fileID: 1111814391827228, guid: c587ecefcf3ad5e438603170ae548c29, type: 2}
+  - {fileID: 1099668154929044, guid: d46b5af6a8b977e4cb1a217619d9ba44, type: 2}
   m_IdleClips: []
   m_IdleGruntChange: 0.001
   m_MovementClips: []
