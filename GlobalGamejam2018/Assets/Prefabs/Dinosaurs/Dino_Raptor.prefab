@@ -150,7 +150,7 @@ MonoBehaviour:
   health: 1
   speed: 50
   panicSpeed: 100
-  scoreWorth: 10
+  scoreWorth: 100
   babyScoreMultyplier: 2
   changedirectionChance: 0.5
   travelTime: {x: 0.5, y: 3}
