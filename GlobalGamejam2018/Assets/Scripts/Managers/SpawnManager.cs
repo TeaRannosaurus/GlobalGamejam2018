@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     public Transform maxSpawnTransfromLeft = null;
     public Transform minSpawnTransfromRight = null;
     public Transform maxSpawnTransfromRight = null;
-
+    public float spawnRoutine = 0.5f;
     public SpeciesSet[] allSpecies     = null;
 
     public void Init()
@@ -41,7 +41,7 @@ public class SpawnManager : MonoBehaviour
                 SpawnSpecies(species);
             }
 
-            yield return new WaitForSeconds(3.0f);
+            yield return new WaitForSeconds(spawnRoutine);
         }
 
         StopCoroutine("CheckTick");
