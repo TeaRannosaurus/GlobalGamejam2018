@@ -9,7 +9,9 @@ public class AstroidBase : MonoBehaviour
 
     public float shakeAmount = 5.0f;
     public float shakeDuration = 1.0f;
-    public Vector2 targetLocation;
+    //public Vector2 targetLocation;
+
+    public GameObject[] onCollisionParticles = null;
 
     [Header("AudioSounds")]
     [SerializeField] private AudioClip[] m_TraveClips     = null;
@@ -21,11 +23,11 @@ public class AstroidBase : MonoBehaviour
 
     public void Init(Vector2 targetLocation)
     {
-        this.targetLocation = targetLocation;
+        //this.targetLocation = targetLocation;
         m_SoundEffectManager = GetComponent<SoundEffectManager>();
         m_TravelLocation = new GameObject().transform;
         m_TravelLocation.parent = transform;
-        m_TravelLocation.position = this.targetLocation;
+        m_TravelLocation.position = targetLocation;
 
         AttemptPlaySound(m_TraveClips);
     }
@@ -56,6 +58,12 @@ public class AstroidBase : MonoBehaviour
                 m_HasShaken = true;
                 m_SoundEffectManager.StopAllAudio();
                 AttemptPlaySound(m_ImpactClips);
+                GetComponentInChildren<SpriteRenderer>().enabled = false;
+                foreach (var particle in onCollisionParticles)
+                {
+                    GameObject particleObject = Instantiate(particle, transform.position, Quaternion.identity);
+                }
+                GameManager.Instance.InitiatePanic();
                 Destroy(gameObject, 5.0f);
             }
         }

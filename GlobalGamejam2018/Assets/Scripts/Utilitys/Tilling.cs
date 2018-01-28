@@ -55,13 +55,14 @@ public class Tilling : MonoBehaviour
     {
         Vector3 newPosition = new Vector3(myTransform.position.x + spriteWidth * rightOrLeft, myTransform.position.y, myTransform.position.z);
         Transform newBuddy = Instantiate(myTransform, newPosition, myTransform.rotation) as Transform;
+        newBuddy.transform.parent = transform;
 
         if (reverseScale == true)
         {
             newBuddy.localScale = new Vector3(newBuddy.localScale.x * -1, newBuddy.localScale.y, newBuddy.localScale.z);
         }
 
-        newBuddy.parent = myTransform.parent;
+        //newBuddy.parent = myTransform.parent;
         if (rightOrLeft > 0)
         {
             newBuddy.GetComponent<Tilling>().hasALeftBuddy = true;

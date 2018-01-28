@@ -15,6 +15,7 @@ public class GameManager : SingletonInstance<GameManager>
 
 
     private float m_GameTimeCounter = 0.0f;
+    private bool m_PanicHasStarted = false;
 
     private void Start()
     {
@@ -31,6 +32,21 @@ public class GameManager : SingletonInstance<GameManager>
         m_GameTimeCounter = gameTime;
         gameHasStarted = true;
         m_GameUI.SetActive(true);
+    }
+
+    public void InitiatePanic()
+    {
+        m_PanicHasStarted = true;
+
+        GameObject[] allDinos = GameObject.FindGameObjectsWithTag("Dino");
+
+        foreach (GameObject dino in allDinos)
+        {
+            DinoBase dinoBase = dino.GetComponent<DinoBase>();
+
+            if(dinoBase.IsAlive())
+                dinoBase.InitiatePanic();
+        }
     }
 
     private void Update()
