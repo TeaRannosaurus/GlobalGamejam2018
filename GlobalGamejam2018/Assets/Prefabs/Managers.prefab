@@ -401,7 +401,7 @@ MonoBehaviour:
     childChange: 0.2
     amountAlive: 0
   - speciesName: Raptor
-    speciesPrefab: {fileID: 1285209193513012, guid: 042f2c2bc63e24149b9e7deef0bda05f,
+    speciesPrefab: {fileID: 1008674882293676, guid: 7a8d0705c9684734889502807780516c,
       type: 2}
     speciesMinMax: {x: 10, y: 50}
     spawnBurst: {x: 5, y: 25}

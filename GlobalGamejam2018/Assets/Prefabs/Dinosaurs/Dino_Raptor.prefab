@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1008674882293676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -485.74417, y: -259.7226, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4339646872889418}
@@ -268,7 +268,7 @@ Animator:
   m_GameObject: {fileID: 1008674882293676}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d52c6fd90055599468f5591f8419e0e0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8503d4b1a521043409c50f89a75f3fa1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -315,14 +315,11 @@ MonoBehaviour:
   childSize: {x: 0.5, y: 0.5, z: 0.5}
   m_BloodParticleSystem: {fileID: 0}
   m_FixedBodyPartSystems:
-  - {fileID: 1396113664198684, guid: 193b60547f2e65f4287b4e2ce446b5a9, type: 2}
-  - {fileID: 1840594058587410, guid: cec47f0b2830ae141858d06f71e088db, type: 2}
-  - {fileID: 1002280681516896, guid: 58a830f3d2e785749b468cb88fd3711c, type: 2}
-  - {fileID: 1882336417288832, guid: d77fed9d5436cec4797e6a1252520d05, type: 2}
-  - {fileID: 1631148493017432, guid: 2ab9cc432ddaf8f4ab5e90626c4de00f, type: 2}
-  - {fileID: 1288102803652182, guid: 8e2364a3bca74274c9b58479b972dcd2, type: 2}
-  - {fileID: 1164473924917010, guid: 1e2c21f336ce6a542bcb86670fb8d6f5, type: 2}
-  - {fileID: 1580975767031694, guid: d282f9ff6ad81df43b8ef62379bd3f5b, type: 2}
+  - {fileID: 1896635140471060, guid: d21fbdf929e99864496f9534a977c083, type: 2}
+  - {fileID: 1448778919682020, guid: 0bd98a717ffc9e548aea2755e38e69bd, type: 2}
+  - {fileID: 1567202499067182, guid: 219eb866899bbc24d861d7609b0ef61f, type: 2}
+  - {fileID: 1764252524110064, guid: 9666b54ed86207f43b7cdfccfa00576c, type: 2}
+  - {fileID: 1203569288380726, guid: a988c8b2d9fb394489373b912fe5b594, type: 2}
   m_IdleClips:
   - {fileID: 0}
   m_IdleGruntChange: 0.001
