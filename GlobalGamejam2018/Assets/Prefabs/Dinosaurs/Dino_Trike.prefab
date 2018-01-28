@@ -321,17 +321,17 @@ MonoBehaviour:
   - {fileID: 1410776699050124, guid: 735d158e3e09f0246be94a096638df0a, type: 2}
   - {fileID: 1218515893174284, guid: 19d268adfb599324ca92d053e9f97f65, type: 2}
   m_IdleClips:
-  - {fileID: 8300000, guid: f7f58e87f5894084da8713af6cba4bae, type: 3}
+  - {fileID: 0}
   m_IdleGruntChange: 0.001
   m_MovementClips:
-  - {fileID: 8300000, guid: 86c3650f2ce71b04694eca4d452e676d, type: 3}
-  - {fileID: 8300000, guid: d91afbdd29a159940b7778791913c072, type: 3}
-  - {fileID: 8300000, guid: f84ff338db552164f9a3c9b3158b79b8, type: 3}
-  - {fileID: 8300000, guid: 10be123924b4eec43af15e6960cf2f3d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_Hurtclips:
-  - {fileID: 8300000, guid: 16bb1a11acf5f35418f4f93eaf984ad7, type: 3}
-  - {fileID: 8300000, guid: 2c0e2704efd005547aa91fb479175807, type: 3}
-  - {fileID: 8300000, guid: 89c7875bbe280984b97326c411b4c8f1, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_DeathClips:
   - {fileID: 8300000, guid: 9611fbbf0a7f1a4489834bf65d63d2dd, type: 3}
 --- !u!212 &212146007913336204
