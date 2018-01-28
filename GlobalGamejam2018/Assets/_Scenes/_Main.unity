@@ -1221,7 +1221,7 @@ Prefab:
         type: 2}
       propertyPath: mainMusic
       value: 
-      objectReference: {fileID: 8300000, guid: 69a07388762c6ba4086cb2ffdb36acf6, type: 3}
+      objectReference: {fileID: 8300000, guid: 39ef0788ec196a04a8adbe503b601dc3, type: 3}
     - target: {fileID: 198714, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -1229,6 +1229,10 @@ Prefab:
     - target: {fileID: 8286744, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_audioClip
       value: 
+      objectReference: {fileID: 8300000, guid: 39ef0788ec196a04a8adbe503b601dc3, type: 3}
+    - target: {fileID: 8286744, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
+      propertyPath: Loop
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
