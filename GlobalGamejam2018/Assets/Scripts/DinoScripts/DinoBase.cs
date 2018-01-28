@@ -247,7 +247,9 @@ public class DinoBase : MonoBehaviour, IDamageable
     {
         if (potentialClips == null || potentialClips.Length == 0)
         {
+#if UNITY_EDITOR
             Debug.LogError("An sound that was attempted to play was empty", this);
+#endif
             return;
         }
 

@@ -361,7 +361,7 @@ MonoBehaviour:
   - speciesName: Trike
     speciesPrefab: {fileID: 1402451124984074, guid: 074adb658786c64498d89f1fe0785a58,
       type: 2}
-    speciesMinMax: {x: 1, y: 15}
+    speciesMinMax: {x: 3, y: 7}
     spawnBurst: {x: 2, y: 5}
     childChange: 0.3
     amountAlive: 0
@@ -369,42 +369,42 @@ MonoBehaviour:
     speciesPrefab: {fileID: 1519703182759890, guid: 5e33fda925a968843846dfc1f2776c9e,
       type: 2}
     speciesMinMax: {x: 1, y: 5}
-    spawnBurst: {x: 1, y: 2}
+    spawnBurst: {x: 1, y: 3}
     childChange: 0.2
     amountAlive: 0
   - speciesName: Spino
     speciesPrefab: {fileID: 1022840678637606, guid: e97c52b5724b2d54e9f8aaf2b83777e0,
       type: 2}
-    speciesMinMax: {x: 1, y: 5}
-    spawnBurst: {x: 1, y: 2}
+    speciesMinMax: {x: 1, y: 2}
+    spawnBurst: {x: 1, y: 1}
     childChange: 0.2
     amountAlive: 0
   - speciesName: Rex
     speciesPrefab: {fileID: 1102416713016686, guid: 285bec69f42e07941aa32997d236180e,
       type: 2}
-    speciesMinMax: {x: 1, y: 5}
-    spawnBurst: {x: 1, y: 2}
+    speciesMinMax: {x: 1, y: 2}
+    spawnBurst: {x: 1, y: 1}
     childChange: 0.2
     amountAlive: 0
   - speciesName: Stego
     speciesPrefab: {fileID: 1330784109644844, guid: 8201784749538e647abb3834583c8c8f,
       type: 2}
-    speciesMinMax: {x: 1, y: 5}
-    spawnBurst: {x: 1, y: 2}
+    speciesMinMax: {x: 2, y: 5}
+    spawnBurst: {x: 1, y: 4}
     childChange: 0.2
     amountAlive: 0
   - speciesName: Anky
     speciesPrefab: {fileID: 1285209193513012, guid: 042f2c2bc63e24149b9e7deef0bda05f,
       type: 2}
-    speciesMinMax: {x: 1, y: 5}
+    speciesMinMax: {x: 1, y: 1}
     spawnBurst: {x: 1, y: 2}
     childChange: 0.2
     amountAlive: 0
   - speciesName: Raptor
     speciesPrefab: {fileID: 1008674882293676, guid: 7a8d0705c9684734889502807780516c,
       type: 2}
-    speciesMinMax: {x: 10, y: 50}
-    spawnBurst: {x: 5, y: 25}
+    speciesMinMax: {x: 5, y: 10}
+    spawnBurst: {x: 3, y: 5}
     childChange: 0.2
     amountAlive: 0
 --- !u!114 &114459891189747074
@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690b7afc2dc940e48982851e4ab9de45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollBoundary: 100
+  scrollBoundary: 250
   scrollSpeed: 500
   nativeResolustion: {x: 800, y: 600}
 --- !u!124 &124734871892024774
