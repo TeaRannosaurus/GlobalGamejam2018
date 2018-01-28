@@ -222,7 +222,7 @@ MonoBehaviour:
   m_TraveClips:
   - {fileID: 8300000, guid: 00d659772812a9341b1f15dd8b324203, type: 3}
   m_ImpactClips:
-  - {fileID: 8300000, guid: 1bc7245ebca89134694f310c2fceb3f2, type: 3}
+  - {fileID: 8300000, guid: b3ebf835fab947245b0f98421b769a75, type: 3}
 --- !u!212 &212908980461126004
 SpriteRenderer:
   m_ObjectHideFlags: 1
