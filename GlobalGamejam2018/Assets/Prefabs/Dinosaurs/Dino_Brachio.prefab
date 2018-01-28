@@ -502,16 +502,15 @@ MonoBehaviour:
   - {fileID: 1222437286116398, guid: 9355ff2aab20db14c86a6e0b82235580, type: 2}
   - {fileID: 1410776699050124, guid: 735d158e3e09f0246be94a096638df0a, type: 2}
   - {fileID: 1218515893174284, guid: 19d268adfb599324ca92d053e9f97f65, type: 2}
-  m_IdleClips:
-  - {fileID: 0}
+  m_IdleClips: []
   m_IdleGruntChange: 0.001
   m_MovementClips: []
-  m_Hurtclips:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  m_Hurtclips: []
   m_DeathClips:
   - {fileID: 8300000, guid: 9611fbbf0a7f1a4489834bf65d63d2dd, type: 3}
+  - {fileID: 8300000, guid: 9a5ac11debb0b0b4f9a61686b3ad2571, type: 3}
+  - {fileID: 8300000, guid: 3ba3c07306db9944ba646631f76f746b, type: 3}
+  - {fileID: 8300000, guid: fde30f9c382f01442a0ce086377986a0, type: 3}
 --- !u!212 &212008476467299230
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b201907085405943a63e736481c0200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speciesName: Unnamed species
+  speciesName: Raptor
   health: 1
   speed: 50
   panicSpeed: 100
