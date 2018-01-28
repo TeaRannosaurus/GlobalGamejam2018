@@ -122,8 +122,11 @@ public class DinoBase : MonoBehaviour, IDamageable
         if(!m_IsAlive)
             return;
 
-        if(transform.position.y < -200.0f)
-            Die();
+        if (transform.position.y < -200.0f)
+        {
+            scoreWorth = 0;
+            Die(true);
+        }
 
         head.position = headpivot.position;
         head.rotation = headpivot.rotation;
@@ -169,7 +172,7 @@ public class DinoBase : MonoBehaviour, IDamageable
         }
     }
 
-    public void Die()
+    public void Die(bool dieInSilence = false)
     {
         m_IsAlive = false;
 
@@ -201,7 +204,10 @@ public class DinoBase : MonoBehaviour, IDamageable
         GameObject.FindGameObjectWithTag("Manager").SendMessage("SpeciesDied", speciesName);
 
         GameManager.Get.score += scoreWorth;
-        AttemptPlaySound(m_DeathClips);
+
+        if(!dieInSilence)
+            AttemptPlaySound(m_DeathClips);
+
         Destroy(this.gameObject, 5.0f);
     }
 
