@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 50910756448602322}
   - component: {fileID: 82423614941044522}
   - component: {fileID: 114386999172440618}
+  - component: {fileID: 95084908981133386}
   m_Layer: 0
   m_Name: Astroid
   m_TagString: Untagged
@@ -189,6 +190,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!95 &95084908981133386
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1891096784598590}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bb2279bdda56dbf4ba55c0e075936f6b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114386999172440618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -220,9 +238,9 @@ MonoBehaviour:
   - {fileID: 1781711796789350, guid: 23393b100bb1cb44eaeb60a699a2a98e, type: 2}
   - {fileID: 1742682955806074, guid: 57c6687ea66f5bc4391c9e8b2143dd0e, type: 2}
   m_TraveClips:
-  - {fileID: 8300000, guid: 00d659772812a9341b1f15dd8b324203, type: 3}
+  - {fileID: 0}
   m_ImpactClips:
-  - {fileID: 8300000, guid: b3ebf835fab947245b0f98421b769a75, type: 3}
+  - {fileID: 0}
 --- !u!212 &212908980461126004
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -257,7 +275,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a9c70c2ce8a7c3a4c9dab1fa4b2a5c60, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34be12a982a25b748970806eb987eee3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -29,6 +29,11 @@ public class AstroidBase : MonoBehaviour
         m_TravelLocation.parent = transform;
         m_TravelLocation.position = targetLocation;
 
+        var direction = new Vector3(m_TravelLocation.position.x, m_TravelLocation.position.y, 0) - transform.position;
+        var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90;
+
+        transform.GetChild(0).rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
         AttemptPlaySound(m_TraveClips);
     }
 

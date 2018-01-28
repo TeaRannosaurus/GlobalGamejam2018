@@ -36,6 +36,8 @@ public class InputHandler : MonoBehaviour
 
         //Vector2 finalDestination = destination;
 
+
+
         GameObject newAstroid = Instantiate(astroidObject, spawnPosition, Quaternion.identity);
         AstroidBase astroidScript = newAstroid.GetComponent<AstroidBase>();
         astroidScript.Init(destination);
