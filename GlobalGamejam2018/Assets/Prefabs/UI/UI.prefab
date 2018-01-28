@@ -882,11 +882,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24324684, guid: 144fc94eb1e035240afd405fbce4f720,
     type: 2}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 39ef0788ec196a04a8adbe503b601dc3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4098,7 +4098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleMusic: {fileID: 8300000, guid: c6d5f9fb0b3c397428b066bec0b2f400, type: 3}
-  mainMusic: {fileID: 8300000, guid: 69a07388762c6ba4086cb2ffdb36acf6, type: 3}
+  mainMusic: {fileID: 8300000, guid: 39ef0788ec196a04a8adbe503b601dc3, type: 3}
   volumeDown: {fileID: 24519918, guid: 144fc94eb1e035240afd405fbce4f720, type: 2}
   volumeUp: {fileID: 24500003, guid: 144fc94eb1e035240afd405fbce4f720, type: 2}
 --- !u!114 &114635300348424548
