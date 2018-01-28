@@ -303,7 +303,7 @@ MonoBehaviour:
   speciesName: Trike
   health: 2
   speed: 50
-  panicSpeed: 20
+  panicSpeed: 100
   changedirectionChance: 0.5
   travelTime: {x: 0.5, y: 3}
   isChild: 0

@@ -105,6 +105,16 @@ public class DinoBase : MonoBehaviour, IDamageable
         AttemptPlaySound(m_MovementClips);
     }
 
+    public void InitiatePanic()
+    {
+        if (m_InPanic)
+            return;
+
+        m_InPanic = true;
+        speed = panicSpeed;
+        m_Animator.SetFloat("Speed", m_Animator.GetFloat("Speed") * 2);
+    }
+
     private void Update()
     {
         if(!m_IsAlive)
@@ -217,10 +227,9 @@ public class DinoBase : MonoBehaviour, IDamageable
         //m_Collider.offset
     }
 
-    public void EnterPanicMode()
+    public bool IsAlive()
     {
-        m_InPanic = true;
-
+        return m_IsAlive;
     }
 
     protected void AttemptPlaySound(AudioClip[] potentialClips)
