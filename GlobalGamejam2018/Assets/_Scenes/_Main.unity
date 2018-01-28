@@ -374,6 +374,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4463984774717728, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -460,6 +465,42 @@ Prefab:
         type: 2}
       propertyPath: allSpecies.Array.data[1].speciesMinMax.y
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[4].speciesName
+      value: Raptor
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[4].speciesPrefab
+      value: 
+      objectReference: {fileID: 1402451124984074, guid: d5549bf5fcd88534a82fad17ac8b684a,
+        type: 2}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[4].speciesMinMax.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[4].speciesMinMax.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[4].spawnBurst.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[4].spawnBurst.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426919777100350, guid: c2aebb28ce416954a9cb194e4504ee64,
+        type: 2}
+      propertyPath: allSpecies.Array.data[4].childChange
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2aebb28ce416954a9cb194e4504ee64, type: 2}
@@ -913,7 +954,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22496010, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 156.47757
+      value: 141.68478
       objectReference: {fileID: 0}
     - target: {fileID: 22496010, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.y
@@ -921,7 +962,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22496010, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 308.95514
+      value: 279.36957
       objectReference: {fileID: 0}
     - target: {fileID: 22496010, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.y
@@ -937,7 +978,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 156.47757
+      value: 141.68478
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.y
@@ -945,7 +986,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 308.95514
+      value: 279.36957
       objectReference: {fileID: 0}
     - target: {fileID: 22491550, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.y
@@ -961,7 +1002,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 156.47757
+      value: 141.68478
       objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_AnchoredPosition.y
@@ -969,7 +1010,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 308.95514
+      value: 279.36957
       objectReference: {fileID: 0}
     - target: {fileID: 22412784, guid: 45616935e4fe10f48b62da1347801a16, type: 2}
       propertyPath: m_SizeDelta.y
