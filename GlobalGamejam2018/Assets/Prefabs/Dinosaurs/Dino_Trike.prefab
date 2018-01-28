@@ -302,7 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speciesName: Trike
   health: 2
-  speed: 50
+  speed: 30
   panicSpeed: 100
   scoreWorth: 30
   babyScoreMultyplier: 2.5

@@ -333,7 +333,7 @@ MonoBehaviour:
   speciesName: Rex
   health: 2
   speed: 50
-  panicSpeed: 100
+  panicSpeed: 150
   scoreWorth: 100
   babyScoreMultyplier: 2.5
   changedirectionChance: 0.5
