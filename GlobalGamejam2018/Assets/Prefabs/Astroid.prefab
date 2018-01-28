@@ -220,9 +220,9 @@ MonoBehaviour:
   - {fileID: 1781711796789350, guid: 23393b100bb1cb44eaeb60a699a2a98e, type: 2}
   - {fileID: 1742682955806074, guid: 57c6687ea66f5bc4391c9e8b2143dd0e, type: 2}
   m_TraveClips:
-  - {fileID: 8300000, guid: 096c8d4ff62307949857ce699fb6dbe5, type: 3}
+  - {fileID: 8300000, guid: 00d659772812a9341b1f15dd8b324203, type: 3}
   m_ImpactClips:
-  - {fileID: 8300000, guid: 7c5e01c51ad8abf44938f216a8ec6946, type: 3}
+  - {fileID: 8300000, guid: 1bc7245ebca89134694f310c2fceb3f2, type: 3}
 --- !u!212 &212908980461126004
 SpriteRenderer:
   m_ObjectHideFlags: 1
