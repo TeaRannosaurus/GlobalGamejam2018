@@ -16,18 +16,23 @@ public class AstroidBase : MonoBehaviour
     [SerializeField] private AudioClip[] m_ImpactClips    = null;
     private SoundEffectManager m_SoundEffectManager       = null;
 
+    private Transform m_TravelLocation = null;
     private bool m_HasShaken = false;
 
     public void Init(Vector2 targetLocation)
     {
         this.targetLocation = targetLocation;
         m_SoundEffectManager = GetComponent<SoundEffectManager>();
+        m_TravelLocation = new GameObject().transform;
+        m_TravelLocation.parent = transform;
+        m_TravelLocation.position = this.targetLocation;
+
         AttemptPlaySound(m_TraveClips);
     }
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, targetLocation, movementSpeed*Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, m_TravelLocation.position, movementSpeed*Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
