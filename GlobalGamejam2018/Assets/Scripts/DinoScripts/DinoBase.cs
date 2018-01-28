@@ -172,7 +172,7 @@ public class DinoBase : MonoBehaviour, IDamageable
         }
     }
 
-    public void Die(bool dieInSilence = false)
+    public void Die(bool dieInSilence = false, bool givesScore = true)
     {
         m_IsAlive = false;
 
@@ -203,7 +203,8 @@ public class DinoBase : MonoBehaviour, IDamageable
     */
         GameObject.FindGameObjectWithTag("Manager").SendMessage("SpeciesDied", speciesName);
 
-        GameManager.Get.score += scoreWorth;
+        if(givesScore)
+            GameManager.Get.score += scoreWorth;
 
         if(!dieInSilence)
             AttemptPlaySound(m_DeathClips);

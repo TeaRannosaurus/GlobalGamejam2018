@@ -89,7 +89,16 @@ public class GameManager : SingletonInstance<GameManager>
 
     private void EndGame()
     {
-        gameTime = 0;
+        m_GameTimeCounter = 0;
+
+        GameObject[] allDinos = GameObject.FindGameObjectsWithTag("Dino");
+
+        foreach (GameObject dino in allDinos)
+        {
+            DinoBase dinoBase = dino.GetComponent<DinoBase>();
+            dinoBase.Die(true, false);
+        }
+
         m_EndGameUI.SetActive(true);
 
         m_EndScoreText.text = "Your score: " + score;
