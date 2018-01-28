@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2952487349e717c4aa3778c66fb1323e
-timeCreated: 1517066423
+timeCreated: 1517112648
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,6 +12,14 @@ TextureImporter:
     21300010: SPRITE_Dino_Brachio_Part_01
     21300012: SPRITE_Dino_Brachio_Part_03
     21300014: SPRITE_Dino_Brachio_Part_06
+    21300016: SPRITE_Dino_Brachio_Gore_02
+    21300018: SPRITE_Dino_Brachio_Gore_01
+    21300020: SPRITE_Dino_Brachio_Gore_03
+    21300022: SPRITE_Dino_Brachio_Gore_04
+    21300024: SPRITE_Dino_Brachio_Gore_05
+    21300026: SPRITE_Dino_Brachio_Gore_08
+    21300028: SPRITE_Dino_Brachio_Gore_07
+    21300030: SPRITE_Dino_Brachio_Gore_06
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -132,7 +140,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 51
+        y: 120
         width: 14
         height: 17
       alignment: 9
@@ -146,7 +154,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 19
-        y: 0
+        y: 69
         width: 24
         height: 59
       alignment: 9
@@ -160,7 +168,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 63
-        y: 0
+        y: 69
         width: 23
         height: 55
       alignment: 9
@@ -174,7 +182,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 91
-        y: 26
+        y: 95
         width: 66
         height: 46
       alignment: 0
@@ -188,7 +196,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 196
-        y: 0
+        y: 69
         width: 113
         height: 79
       alignment: 9
@@ -202,7 +210,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 69
         width: 15
         height: 46
       alignment: 9
@@ -216,7 +224,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 45
-        y: 0
+        y: 69
         width: 15
         height: 46
       alignment: 9
@@ -230,11 +238,123 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 87
-        y: 0
+        y: 69
         width: 103
         height: 25
       alignment: 9
       pivot: {x: 0.06270051, y: 0.48970467}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Brachio_Gore_02
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Brachio_Gore_01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Brachio_Gore_03
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 30
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Brachio_Gore_04
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 25
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Brachio_Gore_05
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 25
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Brachio_Gore_08
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 35
+        width: 68
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Brachio_Gore_07
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 28
+        width: 36
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SPRITE_Dino_Brachio_Gore_06
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
