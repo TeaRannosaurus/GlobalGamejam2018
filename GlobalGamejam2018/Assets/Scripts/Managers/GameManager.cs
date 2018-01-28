@@ -7,13 +7,15 @@ public class GameManager : SingletonInstance<GameManager>
 {
     [Header("Game manager properties")]
     public float gameTime = 60.0f;
+    public int score = 0;
     public bool gameHasStarted { private set; get; }
 
     [Header("UI elements")]
     [SerializeField] private Text m_TimerText = null;
+    [SerializeField] private Text m_ScoreText = null;
     [SerializeField] private GameObject m_GameUI = null;
 
-
+    
     private float m_GameTimeCounter = 0.0f;
     private bool m_PanicHasStarted = false;
 
@@ -74,6 +76,8 @@ public class GameManager : SingletonInstance<GameManager>
         fraction = fraction % 1000;
 
         m_TimerText.text = string.Format("{0:00}:{1:000}", seconds, fraction);
+
+        m_ScoreText.text = "Score: " + score.ToString();
     }
 }
 

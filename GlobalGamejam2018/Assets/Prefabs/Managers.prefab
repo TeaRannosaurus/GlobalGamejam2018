@@ -385,6 +385,12 @@ MonoBehaviour:
   backGrounds:
   - background: {fileID: 0}
     parallaxScale: 1
+  - background: {fileID: 0}
+    parallaxScale: 0.5
+  - background: {fileID: 0}
+    parallaxScale: 5
+  - background: {fileID: 0}
+    parallaxScale: 7.5
   smoothing: 1
 --- !u!114 &114670158962637804
 MonoBehaviour:
@@ -399,6 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameTime: 60
   m_TimerText: {fileID: 0}
+  m_ScoreText: {fileID: 0}
   m_GameUI: {fileID: 0}
 --- !u!114 &114771548685249948
 MonoBehaviour:
